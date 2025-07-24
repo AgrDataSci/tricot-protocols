@@ -1,5 +1,6 @@
 # tricot-protocols
 
+````
 tricot-onfarm-sop/
 ├── README.md
 ├── LICENSE
@@ -18,4 +19,4 @@ tricot-onfarm-sop/
 │   │   └── ...
 ├── zenodo.json
 ├── datacite.json
-
+````
