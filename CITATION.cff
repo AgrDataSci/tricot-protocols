@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this dataset or software, please cite it as below."
+title: "Standard operating procedures for citizen science experiments using the tricot approach"
+version: "v1.2"
+date-released: 2025-06-09
+authors:
+  - family-names: Cremaschi
+    given-names: Almendra
+    orcid: https://orcid.org/0000-0001-8932-5626
+    affiliation: "Bioversity International"
+  - family-names: Laporte
+    given-names: Marie-Angélique
+    orcid: https://orcid.org/0000-0002-8461-9745
+    affiliation: "Bioversity International"
+  - family-names: de Sousa
+    given-names: Kauê
+    orcid: https://orcid.org/0000-0002-7571-7845
+    affiliation: "Bioversity International; University of Inland Norway"
+repository-code: https://github.com/AgrDataSci/tricot-protocols
+license: CC-BY-4.0
+keywords:
+  - participatory research
+  - tricot
+  - open science
+  - on-farm trials
+  - FAIR principles
+  - crop evaluation
+  - citizen science
+  - data workflows

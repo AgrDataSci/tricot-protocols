@@ -1,0 +1,130 @@
+{
+  "titles": [
+    {
+      "title": "Standard operating procedures for citizen science experiments using the tricot approach"
+    }
+  ],
+  "publisher": "Zenodo",
+  "publicationYear": "2025",
+  "resourceType": {
+    "resourceTypeGeneral": "Dataset",
+    "resourceType": "Dataset"
+  },
+  "descriptions": [
+    {
+      "description": "This repository provides a multilingual, FAIR-compliant, and project-oriented template for implementing standardized on-farm crop trial protocols using the tricot (Triadic Comparison of Technologies) approach. It includes SOPs, survey templates, core trait definitions, and documentation aligned with DataCite and Crop Ontology standards. The structure enables efficient version control, Zenodo integration, and reuse across crops and languages.",
+      "descriptionType": "Abstract"
+    }
+  ],
+  "version": "v1.2",
+  "language": "eng",
+  "rightsList": [
+    {
+      "rights": "Creative Commons Attribution 4.0 International",
+      "rightsUri": "https://creativecommons.org/licenses/by/4.0/",
+      "rightsIdentifier": "cc-by-4.0",
+      "rightsIdentifierScheme": "SPDX"
+    }
+  ],
+  "subjects": [
+    {
+      "subject": "participatory research"
+    },
+    {
+      "subject": "tricot"
+    },
+    {
+      "subject": "open science"
+    },
+    {
+      "subject": "on-farm trials"
+    },
+    {
+      "subject": "FAIR principles"
+    },
+    {
+      "subject": "crop evaluation"
+    },
+    {
+      "subject": "citizen science"
+    },
+    {
+      "subject": "data workflows"
+    }
+  ],
+  "creators": [
+    {
+      "name": "Cremaschi, Almendra",
+      "nameType": "Personal",
+      "givenName": "Almendra",
+      "familyName": "Cremaschi",
+      "affiliation": [
+        "Bioversity International"
+      ],
+      "nameIdentifiers": [
+        {
+          "nameIdentifier": "https://orcid.org/0000-0001-8932-5626",
+          "nameIdentifierScheme": "ORCID",
+          "schemeUri": "https://orcid.org"
+        }
+      ]
+    },
+    {
+      "name": "Laporte, Marie-Angélique",
+      "nameType": "Personal",
+      "givenName": "Marie-Angélique",
+      "familyName": "Laporte",
+      "affiliation": [
+        "Bioversity International"
+      ],
+      "nameIdentifiers": [
+        {
+          "nameIdentifier": "https://orcid.org/0000-0002-8461-9745",
+          "nameIdentifierScheme": "ORCID",
+          "schemeUri": "https://orcid.org"
+        }
+      ]
+    },
+    {
+      "name": "de Sousa, Kauê",
+      "nameType": "Personal",
+      "givenName": "Kauê",
+      "familyName": "de Sousa",
+      "affiliation": [
+        "Bioversity International",
+        "University of Inland Norway"
+      ],
+      "nameIdentifiers": [
+        {
+          "nameIdentifier": "https://orcid.org/0000-0002-7571-7845",
+          "nameIdentifierScheme": "ORCID",
+          "schemeUri": "https://orcid.org"
+        }
+      ]
+    }
+  ],
+  "dates": [
+    {
+      "date": "2025-04-14",
+      "dateType": "Accepted"
+    },
+    {
+      "date": "2025-04-14",
+      "dateType": "Submitted"
+    }
+  ],
+  "fundingReferences": [
+    {
+      "funderName": "Norwegian Agency for Development Cooperation",
+      "funderIdentifier": "https://ror.org/04zbn7k04",
+      "awardTitle": "Biodiversity for Opportunities, Livelihoods and Development (BOLD)",
+      "awardNumber": "CONT-1522"
+    },
+    {
+      "funderName": "Gates Foundation",
+      "funderIdentifier": "https://ror.org/0456r8d26",
+      "awardTitle": "1000FARMS",
+      "awardNumber": "INV-031561"
+    }
+  ]
+}
