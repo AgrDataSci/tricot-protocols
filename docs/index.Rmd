@@ -1,0 +1,15 @@
+---
+title: "Standard operating procedures for citizen science experiments using the tricot approach"
+output: html_document
+---
+
+-----
+
+Welcome to "tricot SOPs". 
+
+1. [Introduction](01_introduction.html) 
+2. [Amaranth](02_amaranth.html) 
+
+-----
+
+
