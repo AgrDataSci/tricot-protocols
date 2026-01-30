@@ -1,6 +1,6 @@
 <!-- badges: start -->
-[![License](https://img.shields.io/badge/License-CC%20BY%204.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/deed.en) 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15224389.svg)](https://doi.org)
+[![License](https://img.shields.io/badge/license%20-%20CC%20BY%20SA%204.0%20-%20%233182bd)](https://creativecommons.org/licenses/by-sa/4.0/) 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18428280.svg)](https://doi.org/10.5281/zenodo.18428279)
 <!-- badges: end --> 
 
 ## Standard operating procedures for citizen science experiments using the tricot approach
