@@ -4,7 +4,7 @@
 <!-- badges: end --> 
 
 ## Standard operating procedures for citizen science experiments using the tricot approach
-> Almendra Cremaschi, Marie-Angélique Laporte, Kauê de Sousa
+> Almendra Cremaschi, Marie-Angélique Laporte, Rhys	Manners, Hyacinthe	Nyirahabimana, Kauê de Sousa
 
 
 # Tricot Protocols

@@ -5,7 +5,7 @@
     }
   ],
   "publisher": "Zenodo",
-  "publicationYear": "2025",
+  "publicationYear": "2026",
   "resourceType": {
     "resourceTypeGeneral": "Dataset",
     "resourceType": "Dataset"
@@ -16,7 +16,7 @@
       "descriptionType": "Abstract"
     }
   ],
-  "version": "v1.2",
+  "version": "v0.1",
   "language": "eng",
   "rightsList": [
     {
@@ -86,6 +86,38 @@
       ]
     },
     {
+      "name": "Manners, Rhys",
+      "nameType": "Personal",
+      "givenName": "Rhys",
+      "familyName": "Manners",
+      "affiliation": [
+        "International Institute of Tropical Agriculture"
+      ],
+      "nameIdentifiers": [
+        {
+          "nameIdentifier": "https://orcid.org/0000-0003-0213-5462",
+          "nameIdentifierScheme": "ORCID",
+          "schemeUri": "https://orcid.org"
+        }
+      ]
+    },
+    {
+      "name": "Nyirahabimana, Hyacinthe",
+      "nameType": "Personal",
+      "givenName": "Hyacinthe",
+      "familyName": "Nyirahabimana",
+      "affiliation": [
+        "International Institute of Tropical Agriculture"
+      ],
+      "nameIdentifiers": [
+        {
+          "nameIdentifier": "https://orcid.org/NA",
+          "nameIdentifierScheme": "ORCID",
+          "schemeUri": "https://orcid.org"
+        }
+      ]
+    },
+    {
       "name": "de Sousa, Kauê",
       "nameType": "Personal",
       "givenName": "Kauê",
@@ -115,16 +147,16 @@
   ],
   "fundingReferences": [
     {
-      "funderName": "Norwegian Agency for Development Cooperation",
-      "funderIdentifier": "https://ror.org/04zbn7k04",
-      "awardTitle": "Biodiversity for Opportunities, Livelihoods and Development (BOLD)",
-      "awardNumber": "CONT-1522"
-    },
-    {
       "funderName": "Gates Foundation",
       "funderIdentifier": "https://ror.org/0456r8d26",
       "awardTitle": "1000FARMS",
       "awardNumber": "INV-031561"
+    },
+    {
+      "funderName": "Norwegian Agency for Development Cooperation",
+      "funderIdentifier": "https://ror.org/04zbn7k04",
+      "awardTitle": "Biodiversity for Opportunities, Livelihoods and Development (BOLD)",
+      "awardNumber": "CONT-1522"
     }
   ]
 }
