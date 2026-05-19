@@ -1,5 +1,0 @@
----
-title: "Amaranth protocol"
-output: html_document
----
-
