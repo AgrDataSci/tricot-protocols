@@ -1,0 +1,35 @@
+question_id,question_name,form,question_lang,question_desc
+1550,Civil status,Socio-economic,en,Please indicate your civil status
+1624,Occupation,Socio-economic,en,What is the main occupation of the respondent?
+1549,Education,Socio-economic,en,Please select your highest degree obtained
+1621,Reading,Socio-economic,en,Is the respondent able to read in English?
+1649,Reading Local Language,Socio-economic,en,Is the respondent able to read in the local language?
+1623,Household size,Socio-economic,en,Number of persons living together and sharing meals for more than 6 months a year
+4311,Household below 18,Socio-economic,en,How many children under the age of 18 live in your household?
+1747,Main crop,Socio-economic,en,What is the most important crop that you produce?
+1746,Other crops,Socio-economic,en,What are the crops that you produce?
+1779,Experience with tricot,Socio-economic,en,"Have you contributed to a tricot trial before? If yes, how many times? Zero if first time."
+1637,Who controls seed exchange,Socio-economic,en,Who in your household is mainly responsible for {your tricot crop} seed saving or seed exchange?
+1756,Varieties source,Socio-economic,en,What is the source of {your tricot crop} seed?
+1754,Number of varieties,Socio-economic,en,How many different varieties of {your tricot crop} does your household produce?
+1755,Variety name,Socio-economic,en,What is the name of the variety(ies) that you commonly plant in your field?
+1757,Variety brand,Socio-economic,en,"Does the seed that you buy have a brand and a label? If yes, please indicate the name."
+1752,Ways of selling,Socio-economic,en,How do you usually sell {your tricot crop}?
+1636,Who controls selling,Socio-economic,en,Who in your household is mainly responsible for {your tricot crop} selling?
+1753,Distance to market,Socio-economic,en,How far is the nearest market or place you sell your {your tricot crop} from your farm?
+1750,Sell share,Socio-economic,en,What share of your {your tricot crop} harvest do you usually sell?
+1751,Income crop sell,Socio-economic,en,What share of your total household income comes from selling {your tricot crop}? 
+1635,Who controls production,Socio-economic,en,Who in your household is mainly responsible for {your tricot crop} production?
+1664,Production last 12 months,Socio-economic,en,Did you produced {your tricot crop} during the past 12 months?
+1748,Frequency of production,Socio-economic,en,How many times per year you usually produce your {tricot crop}?
+1665,Reason no production,Socio-economic,en,"If no production during the past 12 months, why? "
+1749,Production practices,Socio-economic,en,Which of the following practices do you usually apply in {your tricot crop} production?
+4960,Storage,Socio-economic,en,Do you store for a long time before consumption?
+1794,Type of storage,Socio-economic,en,What type of storage method do you use? 
+4978,Storage duration days,Socio-economic,en,"If Yes, what is the longest storage duration you usually keep the harvest?"
+4979,Handling surplus,Socio-economic,en,How do you handle the surplus of your harvest (more than you can eat immediately)?
+4980,Crop purchase,Socio-economic,en,"Besides producing in your farm, do you also purchase the crop you tested in your trial from the market?"
+4981,Purchase criteria,Socio-economic,en,"If Yes, based on what criteria do you use choose to buy? (Tick all that apply)"
+1761,Member of an organization,Socio-economic,en,To what types of organization do you belong? 
+1758,Public extension service,Socio-economic,en,Are you in contact with government/public extension services in relation with {your tricot crop} production?
+1759,Private extension service,Socio-economic,en,Are you in contact with private extension services in relation with {your tricot crop} production?

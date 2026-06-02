@@ -1,5 +1,5 @@
 ---
-title: "`r paste0(params$title, ': ', params$crop_name)`"
+title: "`r paste0(params$title[1], ': ', params$crop_name)`"
 subtitle: ""
 output: 
   word_document:
@@ -8,6 +8,7 @@ output:
 params:
   crop: NULL
   language: NULL
+  languages: NULL
   traits: NULL
   collection_moments: NULL
   text: NULL
@@ -39,13 +40,14 @@ get_text = function(section_id) {
 }
 ```
 
-**Version:** `r params$version`    
-**Crop:** `r params$crop_name`    
-**Taxa:** *`r params$taxa`* `r params$autority`    
-**Authors:** `r params$authors`    
-**Institutions:** `r params$centers`     
-**Traits:** `r paste(params$traits, collapse = ", ")`     
-**Data collection moments:** `r paste(params$collection_moments, collapse = ", ")`     
+**`r params$title[2]`:** `r params$version`    
+**`r params$title[3]`:** `r params$crop_name`    
+**`r params$title[4]`:** *`r params$taxa`* `r params$autority`    
+**`r params$title[5]`:** `r params$authors`    
+**`r params$title[6]`:** `r params$centers`     
+**`r params$title[7]`:** `r paste(params$traits, collapse = ", ")`     
+**`r params$title[8]`:** `r paste(params$collection_moments, collapse = ", ")`     
+**`r params$title[9]`:** `r paste(params$languages, collapse = ", ")`
 
 \pagebreak
 
@@ -109,9 +111,11 @@ for (form_name in names(params$survey)) {
   cat("\n\n## ", form_name, "\n\n", sep = "")
 
   tab = params$survey[[form_name]] |>
-    select(`Question name` = question_name,
-           `Question description` = question_desc)
+    select(question_name,
+           question_desc)
 
+  names(tab) = c(params$title[10], params$title[11])
+  
   rownames(tab) = NULL
 
   print(knitr::kable(tab, 
@@ -135,6 +139,8 @@ resources = params$other_resources |>
          Link = ifelse(is.na(link) | link == "", "TBD", link)) |>
   select(Resource, Link) |>
   tibble::as_tibble()
+
+names(resources) = names(tab) = c(params$title[12], params$title[13])
 
 print(knitr::kable(resources, format = "pipe"))
 ```

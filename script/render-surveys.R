@@ -20,19 +20,15 @@ text = read_excel("data/base-text-sop.xlsx", sheet = "text")
 
 other_resources = read_excel("data/base-text-sop.xlsx", sheet = "other_resources")
 
-# read the title with all the languages available
-title = read_excel(paste0("data/", crop, "-heading.xlsx"),
-                   sheet = "title")
+title = read_excel("data/base-text-sop.xlsx", sheet = "title")
 
 # read table with crop information
 crop_info = read_excel(paste0("data/", crop, "-heading.xlsx"),
                        sheet = "crop")
 
-taxa = crop_info$value[crop_info$key == "taxa"]
+taxa = crop_info$en[crop_info$key == "taxa"]
 
-autority = crop_info$value[crop_info$key == "autority"]
-
-crop_name = ClimMobTools:::.title_case(crop_info$value[crop_info$key == "crop"])
+autority = crop_info$en[crop_info$key == "autority"]
 
 # read table with authors and centers information 
 authors = read_excel(paste0("data/", crop, "-heading.xlsx"),
@@ -53,23 +49,30 @@ authors = paste(authors, collapse = ", ")
 
 l = 1
 
-# select the text
+
+# select crop nome of the respective language
+crop_name_i = crop_info[[1, languages[l]]]
+
+# select the text for the respective language
 text_index = which(names(text) %in% languages[l])
 
 text_i = text[, c(1, text_index)]
 
 names(text_i) = c("section", "text")
 
-title_index = which(title$language %in% languages[l])
+title_index = which(text_i$section %in% "title")
 
-title_i = title[title_index, 2, drop = TRUE]
+# select the title info for the respective language
+title_index = which(names(title) %in% languages[l])
+
+title_i = unlist(title[title_index])
 
 text_i$text = gsub("`r templatename`", template_name, text_i$text)
 
-# select the table with other resources
-text_index = which(names(other_resources) %in% languages[l])
+# select the table with other resources for the respective language
+or_index = which(names(other_resources) %in% languages[l])
 
-other_resources_i = other_resources[, c(1, text_index)]
+other_resources_i = other_resources[, c(1, or_index)]
 
 other_resources_i = other_resources_i[,c(2, 1)]
 
@@ -134,12 +137,13 @@ rmarkdown::render(
   params = list(
     crop = crop,
     language = languages[l],
+    languages = toupper(languages[-l]),
     traits = traits,
     collection_moments = collection_moments, 
     text = text_i,
     other_resources = other_resources_i,
     title = title_i,
-    crop_name = crop_name,
+    crop_name = crop_name_i,
     taxa = taxa,
     autority = autority,
     authors = authors,
