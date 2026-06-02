@@ -1,0 +1,65 @@
+---
+title: "`r paste0(`r params$title`, ":", "`r params$crop_name`")`"
+subtitle: 
+output: 
+  word_document
+---
+
+```{r setup, include=FALSE}
+library("knitr")
+library("kableExtra")
+library("dplyr")
+library("stringr")
+
+opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+```
+
+**Version** `r params$version`    
+**Crop:** `r params$crop_name`    
+**Taxa:** *`r params$taxa`* `r params$autority`    
+**Authors:** `r params$authors`    
+**Institutions:** `r params$centers`     
+**Traits:** `r params$traits`     
+**Data collection moments:** `r params$collection_moments`     
+
+
+\pagebreak
+
+# `r params$text[params$text$section == "intro-heading", 2]`
+
+```{r base-text, results='asis'}
+intro = unlist(params$text[params$text$section == "intro", 2])
+cat(intro, "\n\n\n\n")
+```
+
+<!-- # Survey Forms And Variables -->
+
+<!-- ```{r survey-tables, results='asis'} -->
+<!-- for (form_name in names(params$survey)) { -->
+
+<!--   cat("\n## ", form_name, "\n\n") -->
+
+<!--   tab = params$survey[[form_name]] |> -->
+<!--     select( -->
+<!--       `Question ID` = question_id, -->
+<!--       `Question Code` = question_code, -->
+<!--       `Question Description` = question_desc -->
+<!--     ) -->
+
+<!--   print( -->
+<!--     kable( -->
+<!--       tab, -->
+<!--       format = "latex", -->
+<!--       booktabs = TRUE, -->
+<!--       longtable = TRUE -->
+<!--     ) |> -->
+<!--       kable_styling( -->
+<!--         latex_options = c("repeat_header", "striped"), -->
+<!--         font_size = 9 -->
+<!--       ) |> -->
+<!--       column_spec(3, width = "9cm") -->
+<!--   ) -->
+
+<!--   cat("\n\n") -->
+<!-- } -->
+<!-- ``` -->
