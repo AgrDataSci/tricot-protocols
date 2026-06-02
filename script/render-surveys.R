@@ -6,14 +6,19 @@ library("rmarkdown")
 apiKey = Sys.getenv("CLIMMOB_API_KEY")
 user = "bioversity"
 
+templates = getProjectsCM(apiKey, server = "1000farms")
+
 crop = "sweetpotato"
 sop = "sweetpotat"
+template_name = templates$project_name[grep(sop, templates$project_code)]
 version = paste0("v", Sys.Date())
 
 languages = c("en", "pt", "fr", "sw", "es")
 
 # read base text table with all the languages available 
-text = read_excel("data/base-text-sop.xlsx")
+text = read_excel("data/base-text-sop.xlsx", sheet = "text")
+
+other_resources = read_excel("data/base-text-sop.xlsx", sheet = "other_resources")
 
 # read the title with all the languages available
 title = read_excel(paste0("data/", crop, "-heading.xlsx"),
@@ -48,13 +53,27 @@ authors = paste(authors, collapse = ", ")
 
 l = 1
 
+# select the text
 text_index = which(names(text) %in% languages[l])
 
 text_i = text[, c(1, text_index)]
 
+names(text_i) = c("section", "text")
+
 title_index = which(title$language %in% languages[l])
 
 title_i = title[title_index, 2, drop = TRUE]
+
+text_i$text = gsub("`r templatename`", template_name, text_i$text)
+
+# select the table with other resources
+text_index = which(names(other_resources) %in% languages[l])
+
+other_resources_i = other_resources[, c(1, text_index)]
+
+other_resources_i = other_resources_i[,c(2, 1)]
+
+names(other_resources_i) = c("text", "link")
 
 # get list of surveys in the ClimMob template
 survey = getSurveyCM(apiKey,
@@ -97,7 +116,11 @@ survey = survey[ord, ]
 
 survey = survey[, c(2, 3, 5)]
 
+forms = unique(survey$form)
+
 survey = split(survey, survey$form)
+
+survey = survey[forms]
 
 output_dir = file.path("docs", crop)
 
@@ -114,6 +137,7 @@ rmarkdown::render(
     traits = traits,
     collection_moments = collection_moments, 
     text = text_i,
+    other_resources = other_resources_i,
     title = title_i,
     crop_name = crop_name,
     taxa = taxa,

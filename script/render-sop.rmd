@@ -3,7 +3,7 @@ title: "`r paste0(params$title, ': ', params$crop_name)`"
 subtitle: ""
 output: 
   word_document:
-    reference_docx: word-template.docx
+    reference_docx: "word-template.docx"
     toc: false
 params:
   crop: NULL
@@ -19,32 +19,124 @@ params:
   centers: NULL
   survey: NULL
   version: NULL
+  other_resources: NULL
 ---
 
 ```{r setup, include=FALSE}
 library("knitr")
-library("kableExtra")
 library("dplyr")
 library("stringr")
 
 opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+
+text = params$text
+names(text) = c("section", "value")
+
+get_text = function(section_id) {
+  x = text$value[text$section == section_id]
+  x = x[!is.na(x)]
+  paste(x, collapse = "\n\n")
+}
 ```
 
-**Version** `r params$version`    
+**Version:** `r params$version`    
 **Crop:** `r params$crop_name`    
 **Taxa:** *`r params$taxa`* `r params$autority`    
 **Authors:** `r params$authors`    
 **Institutions:** `r params$centers`     
-**Traits:** `r params$traits`     
-**Data collection moments:** `r params$collection_moments`     
-
+**Traits:** `r paste(params$traits, collapse = ", ")`     
+**Data collection moments:** `r paste(params$collection_moments, collapse = ", ")`     
 
 \pagebreak
 
-# `r params$text[params$text$section == "intro-heading", 2]`
+# `r get_text("intro-heading")`
 
-```{r base-text, results='asis'}
-intro = unlist(params$text[params$text$section == "intro", 2])
-cat(intro, "\n\n\n\n")
+```{r intro, results='asis'}
+cat(get_text("intro"))
 ```
+
+# `r get_text("scope-heading")`
+
+```{r scope, results='asis'}
+cat(get_text("scope"))
+```
+
+# `r get_text("consent-heading")`
+
+```{r consent, results='asis'}
+cat(get_text("consent"))
+```
+
+# `r get_text("design-heading")`
+
+```{r design, results='asis'}
+cat(get_text("design"))
+```
+
+# `r get_text("materials-heading")`
+
+```{r materials, results='asis'}
+cat(get_text("materials"))
+```
+
+# `r get_text("trial-observation-heading")`
+
+```{r trial-observation, results='asis'}
+cat(get_text("trial-observation"))
+```
+
+# `r get_text("registration-heading")`
+
+```{r registration, results='asis'}
+cat(get_text("registration"))
+```
+
+# `r get_text("socioeconomic-heading")`
+
+```{r socioeconomic, results='asis'}
+cat(get_text("socioeconomic"))
+```
+
+# `r get_text("survey-heading")`
+
+```{r survey-intro, results='asis'}
+cat(get_text("survey"))
+```
+
+```{r survey-tables, results='asis'}
+for (form_name in names(params$survey)) {
+
+  cat("\n\n## ", form_name, "\n\n", sep = "")
+
+  tab = params$survey[[form_name]] |>
+    select(`Question name` = question_name,
+           `Question description` = question_desc)
+
+  rownames(tab) = NULL
+
+  print(knitr::kable(tab, 
+                     format = "pipe"))
+
+  cat("\n\n")
+}
+```
+
+\pagebreak
+
+# `r get_text("other-heading")`
+
+```{r other-intro, results='asis'}
+cat(get_text("other"))
+```
+
+```{r other-resources, results='asis'}
+resources = params$other_resources |>
+  mutate(Resource = text,
+         Link = ifelse(is.na(link) | link == "", "TBD", link)) |>
+  select(Resource, Link) |>
+  tibble::as_tibble()
+
+print(knitr::kable(resources, format = "pipe"))
+```
+
 
