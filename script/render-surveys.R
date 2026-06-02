@@ -3,10 +3,10 @@ library("tidyverse")
 library("readxl")
 library("rmarkdown")
 
-apiKey = "20abbf14-841a-4ae2-bc4f-5c0c051b2d8e" #Sys.getenv("CLIMMOB_API_KEY")
+apiKey = Sys.getenv("CLIMMOB_API_KEY")
 user = "bioversity"
 
-crop = "sweet potato"
+crop = "sweetpotato"
 sop = "sweetpotat"
 version = paste0("v", Sys.Date())
 
@@ -104,7 +104,7 @@ output_dir = file.path("docs", crop)
 dir.create(output_dir, recursive = TRUE, showWarnings = FALSE)
 
 rmarkdown::render(
-  input = "script/render-sop.Rmd",
+  input = "script/render-sop.rmd",
   output_dir = output_dir,
   output_format = "word_document",
   output_file = paste0(crop, "-sop-", languages[l], ".docx"),

@@ -1,6 +1,6 @@
 library(ClimMobTools)
 library(tidyverse)
-apiKey = "20abbf14-841a-4ae2-bc4f-5c0c051b2d8e"
+apiKey = Sys.getenv("CLIMMOB_API_KEY")
 user = "bioversity"
 
 sops = getProjectsCM(apiKey, server = "1000farms")

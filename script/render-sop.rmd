@@ -1,8 +1,24 @@
 ---
-title: "`r paste0(`r params$title`, ":", "`r params$crop_name`")`"
-subtitle: 
+title: "`r paste0(params$title, ': ', params$crop_name)`"
+subtitle: ""
 output: 
-  word_document
+  word_document:
+    reference_docx: word-template.docx
+    toc: false
+params:
+  crop: NULL
+  language: NULL
+  traits: NULL
+  collection_moments: NULL
+  text: NULL
+  title: NULL
+  crop_name: NULL
+  taxa: NULL
+  autority: NULL
+  authors: NULL
+  centers: NULL
+  survey: NULL
+  version: NULL
 ---
 
 ```{r setup, include=FALSE}
@@ -32,34 +48,3 @@ intro = unlist(params$text[params$text$section == "intro", 2])
 cat(intro, "\n\n\n\n")
 ```
 
-<!-- # Survey Forms And Variables -->
-
-<!-- ```{r survey-tables, results='asis'} -->
-<!-- for (form_name in names(params$survey)) { -->
-
-<!--   cat("\n## ", form_name, "\n\n") -->
-
-<!--   tab = params$survey[[form_name]] |> -->
-<!--     select( -->
-<!--       `Question ID` = question_id, -->
-<!--       `Question Code` = question_code, -->
-<!--       `Question Description` = question_desc -->
-<!--     ) -->
-
-<!--   print( -->
-<!--     kable( -->
-<!--       tab, -->
-<!--       format = "latex", -->
-<!--       booktabs = TRUE, -->
-<!--       longtable = TRUE -->
-<!--     ) |> -->
-<!--       kable_styling( -->
-<!--         latex_options = c("repeat_header", "striped"), -->
-<!--         font_size = 9 -->
-<!--       ) |> -->
-<!--       column_spec(3, width = "9cm") -->
-<!--   ) -->
-
-<!--   cat("\n\n") -->
-<!-- } -->
-<!-- ``` -->
