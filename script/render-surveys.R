@@ -13,7 +13,7 @@ sop = "sweetpotat"
 template_name = templates$project_name[grep(sop, templates$project_code)]
 version = paste0("v", Sys.Date())
 
-languages = c("en", "pt", "fr", "es")
+languages = c("en", "pt", "fr", "es", "sw")
 
 # read base text table with all the languages available 
 text = read_excel("data/base-text-sop.xlsx", sheet = "text")
@@ -47,7 +47,6 @@ centers = paste(na.omit(unique(c(authors$affiliation_1, authors$affiliation_2)))
 authors = paste0(authors$given_name, " ", authors$family_name, " (", authors$role,  ")")
 
 authors = paste(authors, collapse = ", ")
-
 
 for (l in seq_along(languages)) {
   
