@@ -13,7 +13,7 @@ sop = "sweetpotat"
 template_name = templates$project_name[grep(sop, templates$project_code)]
 version = paste0("v", Sys.Date())
 
-languages = c("en", "pt", "fr", "es", "sw")
+languages = c("en", "pt", "fr", "es", "swh")
 
 # read base text table with all the languages available 
 text = read_excel("data/base-text-sop.xlsx", sheet = "text")
