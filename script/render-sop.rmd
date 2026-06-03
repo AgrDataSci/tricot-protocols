@@ -6,8 +6,6 @@ output:
     reference_docx: "word-template.docx"
     toc: false
 params:
-  crop: NULL
-  language: NULL
   languages: NULL
   traits: NULL
   collection_moments: NULL
@@ -21,6 +19,7 @@ params:
   survey: NULL
   version: NULL
   other_resources: NULL
+  doi: NULL
 ---
 
 ```{r setup, include=FALSE}
@@ -40,14 +39,23 @@ get_text = function(section_id) {
 }
 ```
 
-**`r params$title[2]`:** `r params$version`    
-**`r params$title[3]`:** `r params$crop_name`    
-**`r params$title[4]`:** *`r params$taxa`* `r params$autority`    
-**`r params$title[5]`:** `r params$authors`    
-**`r params$title[6]`:** `r params$centers`     
-**`r params$title[7]`:** `r paste(params$traits, collapse = ", ")`     
-**`r params$title[8]`:** `r paste(params$collection_moments, collapse = ", ")`     
+**`r params$title[2]`:** `r params$version`
+
+**`r params$title[3]`:** `r params$crop_name`
+
+**`r params$title[4]`:** *`r params$taxa`* `r params$autority`
+
+**`r params$title[5]`:** `r params$authors`
+
+**`r params$title[6]`:** `r params$centers`
+
+**`r params$title[7]`:** `r paste(params$traits, collapse = ", ")`
+
+**`r params$title[8]`:** `r paste(params$collection_moments, collapse = ", ")`
+
 **`r params$title[9]`:** `r paste(params$languages, collapse = ", ")`
+
+**DOI:** `r params$doi`
 
 \pagebreak
 
@@ -75,6 +83,10 @@ cat(get_text("consent"))
 cat(get_text("design"))
 ```
 
+```{r layout-fig, echo=FALSE, fig.cap="", out.width="80%"}
+knitr::include_graphics("../data/img/plot-layout.png")
+```
+
 # `r get_text("materials-heading")`
 
 ```{r materials, results='asis'}
@@ -85,6 +97,10 @@ cat(get_text("materials"))
 
 ```{r trial-observation, results='asis'}
 cat(get_text("trial-observation"))
+```
+
+```{r observation-card, echo=FALSE, fig.cap="", out.width="65%"}
+knitr::include_graphics("../data/img/observation-card.png")
 ```
 
 # `r get_text("registration-heading")`
