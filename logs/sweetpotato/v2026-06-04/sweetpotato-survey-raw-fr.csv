@@ -1,0 +1,94 @@
+"question_id","question_name","form","question_lang","question_desc","question_notes","question_unit","question_posstm","question_negstm","question_perfstmt"
+162,"Code de paquet","Participant registration form","fr","Code de paquet","Donner un colis au fermier","",NA,NA,NA
+206,"Point de livraison","Participant registration form","fr","Veuillez enregistrer la localisation GPS où le package ont été livrées","Point GPS où le colis est livré","",NA,NA,NA
+1548,"Âge","Participant registration form","fr","Veuillez indiquer votre âge",NA,"années",NA,NA,NA
+2290,"Consentement","Participant registration form","fr","Êtes-vous disposé à accepter d'héberger un essai tricot et de fournir les informations requises de l'essai ?",NA,"-",NA,NA,NA
+2296,"ADM1","Participant registration form","fr","Nom de la zone administrative niveau 1 (état, province, région, etc.)",NA,"",NA,NA,NA
+199,"Nom du participant","Participant registration form","fr","Nom du participant","Le nom du participant","",NA,NA,NA
+2297,"ADM2","Participant registration form","fr","Nom de la zone administrative niveau 2 (ville, comté, commune, zone de gouvernement local, etc.)",NA,"",NA,NA,NA
+2635,"Sexe","Participant registration form","fr","Veuillez sélectionner votre sexe",NA,"-",NA,NA,NA
+1581,"Expérience avec la culture","Participant registration form","fr","Veuillez indiquer depuis combien d'années vous cultivez cette culture ?",NA,"années",NA,NA,NA
+2298,"ADM3","Participant registration form","fr","Nom de la région administrative niveau 3 (communauté, village, etc.)",NA,"",NA,NA,NA
+1547,"Téléphone","Participant registration form","fr","Veuillez indiquer votre numéro de téléphone",NA,"",NA,NA,NA
+163,"Sélection du participant","Vegetative - Establishment","fr","Sélectionner le participant","Pour sélectionner un participant précédemment enregistré.","Sélectionner le participant",NA,NA,NA
+1736,"À temps","Vegetative - Establishment","fr","Votre colis d'essai a-t-il été livré à temps ?",NA,"-",NA,NA,NA
+1530,"Date de plantation","Vegetative - Establishment","fr","Date de l'établissement de l'essai",NA,"-",NA,NA,NA
+1531,"GPS de l'essai","Vegetative - Establishment","fr","La localisation GPS de l'essai sur le terrain",NA,"-",NA,NA,NA
+1532,"Variété locale","Vegetative - Establishment","fr","Quel est le nom de la variété locale plantée dans l'essai en tant que témoin ?",NA,"",NA,NA,NA
+1536,"Utilisation précédente du terrain","Vegetative - Establishment","fr","Quelle était l'utilisation précédente du terrain de l'essai sur le terrain ?",NA,"",NA,NA,NA
+1772,"Mode de préparation du terrain","Vegetative - Establishment","fr","Quel équipement a été utilisé pour la préparation du terrain ?",NA,"-",NA,NA,NA
+1745,"Pente","Vegetative - Establishment","fr","Quelle est la pente de la zone où vous avez établi votre essai tricot ?",NA,"-",NA,NA,NA
+3459,"Implantation végétale","Vegetative - Establishment","fr","-",NA,"-","Quelle option a été implantée en premier ?","Quelle option a été implantée en dernier ?",NA
+4982,"Symptômes du virus","Vegetative - Establishment","fr","-",NA,"-","Quelle variété présente le moins de symptômes du virus ?","Quelle variété présente le plus de symptômes du virus ?",NA
+163,"Sélection du participant","Vegetative - Drought and heat tolerance","fr","Sélectionner le participant","Pour sélectionner un participant précédemment enregistré.","Sélectionner le participant",NA,NA,NA
+1552,"Vigueur","Vegetative - Drought and heat tolerance","fr","-",NA,"-","Quelle option a montré le meilleur vigueur ?","Quelle option a montré la pire vigueur ?",NA
+1555,"Tolérance à la sécheresse","Vegetative - Drought and heat tolerance","fr","-",NA,"-","Quelle option est plus tolérante à la sécheresse ?","Quelle option est plus susceptible à la sécheresse ?",NA
+2636,"Ravageurs et maladies","Vegetative - Drought and heat tolerance","fr","-",NA,"-","Quelle option est la plus résistante aux ravageurs et aux maladies ?","Quelle option est la plus sensible aux ravageurs et aux maladies ?",NA
+163,"Sélection du participant","Harvest - Technician assessment","fr","Sélectionner le participant","Pour sélectionner un participant précédemment enregistré.","Sélectionner le participant",NA,NA,NA
+4953,"Total foliage yield","Harvest - Technician assessment","fr","Total foliage yield",NA,"kg",NA,NA,NA
+4956,"Number of plants harvested","Harvest - Technician assessment","en","Total number of plants harvested in the plot",NA,"",NA,NA,NA
+4955,"Number of plants with roots","Harvest - Technician assessment","en","Number of plants with roots in the plot",NA,"",NA,NA,NA
+2313,"Nombre de racines commercialisables","Harvest - Technician assessment","fr","Combien parmi les racines récoltées vous rapporteront un prix élevé sur le marché ?",NA,"",NA,NA,NA
+2314,"Nombre de racines non commercialisables","Harvest - Technician assessment","fr","Combien parmi les racines récoltées vous rapporteront un prix bas sur le marché ?",NA,"",NA,NA,NA
+2315,"Rendement commercialisable quantitatif","Harvest - Technician assessment","fr","Quel est le rendement des racines qui vous rapporteront un prix plus élevé sur le marché ?",NA,"Kilogramme",NA,NA,NA
+2316,"Rendement non commercialisable quantitatif","Harvest - Technician assessment","fr","Quel est le rendement des racines qui vous rapporteront un prix plus bas sur le marché ?",NA,"Kilogramme",NA,NA,NA
+2399,"Unité quantitative du rendement","Harvest - Technician assessment","fr","Quelle était l’unité de mesure du rendement ?",NA,"-",NA,NA,NA
+163,"Sélection du participant","Harvest - Farmer assessment","fr","Sélectionner le participant","Pour sélectionner un participant précédemment enregistré.","Sélectionner le participant",NA,NA,NA
+1558,"Rendement","Harvest - Farmer assessment","fr","-",NA,"-","Quelle option a le rendement le plus élevé ?","Quelle option a le rendement le plus bas ?",NA
+4949,"Commercial yield","Harvest - Farmer assessment","en","-",NA,"-","Which variety produced more commercial yield per plant?","Which variety produced less commercial yield per plant?",NA
+2320,"Taille des racines","Harvest - Farmer assessment","fr","-",NA,"-","Quelle variété a les plus grosses racines ?","Quelle variété a les plus petites racines ?",NA
+2322,"Forme des racines","Harvest - Farmer assessment","fr","-",NA,"-","Quelle variété a les racines les mieux formées ?","Quelle variété a les racines les plus mal formées ?",NA
+4950,"Root skin color","Harvest - Farmer assessment","en","-",NA,"-","Which variety shows the best skin color?","Which variety shows the worst skin color?",NA
+4951,"Resistência ao gorgulho","Harvest - Farmer assessment","fr","-",NA,"-","Qual variedade é mais resistente ao gorgulho?","Qual variedade é menos resistente ao gorgulho?",NA
+4952,"Resistência ao milípede","Harvest - Farmer assessment","fr","-",NA,"-","Qual variedade é mais resistente ao maria-café/milípede/piolho-de-cobra?","Qual variedade é mais resistente ao maria-café/milípede/piolho-de-cobra?",NA
+1561,"Valor comercial","Harvest - Farmer assessment","fr","-",NA,"-","Quelle option est la plus facile à vendre ?","Quelle option est la plus difficile à vendre ?",NA
+1735,"Overall preference","Harvest - Farmer assessment","en","-",NA,"-","Overall, which option  was the best?","Overall, which option  was the worst?",NA
+1596,"Pourquoi le meilleur","Harvest - Farmer assessment","fr","Pourquoi indiquez-vous cette option comme la meilleure ?",NA,"",NA,NA,NA
+1704,"Pourquoi le pire","Harvest - Farmer assessment","fr","Pourquoi avez-vous indiqué cette option comme la pire ?",NA,"",NA,NA,NA
+205,"Global vs Local","Harvest - Farmer assessment","fr","-","Performance globale par rapport à la locale","",NA,NA,"Globalement, {{option}} est-elle meilleure ou pire que celle que vous cultivez actuellement ?"
+163,"Sélection du participant","Post-harvest - Food product evaluation","fr","Sélectionner le participant","Pour sélectionner un participant précédemment enregistré.","Sélectionner le participant",NA,NA,NA
+4957,"Cooking methods","Post-harvest - Food product evaluation","en","Which cooking method do you commonly use to prepare it in your household?",NA,"-",NA,NA,NA
+1562,"Goût","Post-harvest - Food product evaluation","fr","-",NA,"-","Quelle option a le meilleur goût ?","Quelle option a le pire goût ?",NA
+2803,"Texture après cuisson","Post-harvest - Food product evaluation","fr","-",NA,"-","Quelle variété avez-vous trouvée la plus tendre après cuisson ?","Quelle variété avez-vous trouvée la plus dure après cuisson ?",NA
+1735,"Overall preference","Post-harvest - Food product evaluation","en","-",NA,"-","Overall, which option  was the best?","Overall, which option  was the worst?",NA
+4958,"Best attributes","Post-harvest - Food product evaluation","en","What attributes make this variety best for you? (Tick all that apply)",NA,"-",NA,NA,NA
+4959,"Worst attributes","Post-harvest - Food product evaluation","en","What attributes make this variety worst for you? (Tick all that apply)",NA,"-",NA,NA,NA
+1778,"Reproduire à nouveau","Post-harvest - Food product evaluation","fr","Si des semences étaient disponibles pour les trois options, lesquelles aimeriez-vous cultiver la saison prochaine ?",NA,"-",NA,NA,NA
+163,"Sélection du participant","Socio-economic baseline","fr","Sélectionner le participant","Pour sélectionner un participant précédemment enregistré.","Sélectionner le participant",NA,NA,NA
+1548,"Âge","Socio-economic baseline","fr","Veuillez indiquer votre âge",NA,"années",NA,NA,NA
+2635,"Sexe","Socio-economic baseline","fr","Veuillez sélectionner votre sexe",NA,"-",NA,NA,NA
+1550,"État civil","Socio-economic baseline","fr","Veuillez indiquer votre état civil",NA,"-",NA,NA,NA
+1624,"Occupation","Socio-economic baseline","fr","Quelle est la principale occupation du répondant ?",NA,"-",NA,NA,NA
+1549,"Éducation","Socio-economic baseline","fr","Veuillez sélectionner le diplôme le plus élevé obtenu",NA,"-",NA,NA,NA
+1621,"Lecture","Socio-economic baseline","fr","Le répondant est-il capable de lire en Français ?",NA,"-",NA,NA,NA
+1649,"Lecture en langue locale","Socio-economic baseline","fr","Le répondant est-il capable de lire dans la langue locale ?",NA,"-",NA,NA,NA
+1623,"Taille du ménage","Socio-economic baseline","fr","Nombre de personnes vivant ensemble et partageant des repas pendant plus de 6 mois par an",NA,"",NA,NA,NA
+4311,"Famille moins de 18","Socio-economic baseline","fr","Combien de personnes de moins de 18 ans vivent dans votre foyer ?",NA,"",NA,NA,NA
+1747,"Culture principale","Socio-economic baseline","fr","Quelle est la culture la plus importante que vous produisez ?",NA,"",NA,NA,NA
+1746,"Autres cultures","Socio-economic baseline","fr","Quelles sont les cultures que vous produisez ?",NA,"",NA,NA,NA
+1581,"Expérience avec la culture","Socio-economic baseline","fr","Veuillez indiquer depuis combien d'années vous cultivez cette culture ?",NA,"années",NA,NA,NA
+1779,"Expérience avec tricot","Socio-economic baseline","fr","Avez-vous déjà contribué à un essai tricot ? Si oui, combien de fois ? Zéro si c'est la première fois.",NA,"",NA,NA,NA
+1637,"Qui contrôle l'échange de semences","Socio-economic baseline","fr","Qui dans votre ménage est responsable de la conservation ou de l'échange des semences de {votre culture tricot} ?",NA,"-",NA,NA,NA
+1756,"Source des variétés","Socio-economic baseline","fr","Quelle est la source des semences de {votre culture tricot} ?",NA,"-",NA,NA,NA
+1754,"Nombre de variétés","Socio-economic baseline","fr","Combien de variétés différentes de {votre culture tricot} votre ménage produit-il ?",NA,"",NA,NA,NA
+1755,"Nom de la variété","Socio-economic baseline","fr","Quel est le nom des variétés de {votre culture tricot} que vous produisez habituellement ?",NA,"-",NA,NA,NA
+1757,"Marque de la variété","Socio-economic baseline","fr","La semence que vous achetez a-t-elle une marque et une étiquette ? Si oui, veuillez indiquer le nom.",NA,"-",NA,NA,NA
+1752,"Modes de vente","Socio-economic baseline","fr","Comment vendez-vous habituellement {votre culture tricot} ?",NA,"-",NA,NA,NA
+1636,"Qui contrôle la vente","Socio-economic baseline","fr","Qui dans votre ménage est principalement responsable de la vente de {votre culture tricot} ?",NA,"-",NA,NA,NA
+1753,"Distance au marché","Socio-economic baseline","fr","Quelle est la distance depuis votre ferme jusqu'au lieu de vente le plus proche pour {votre culture tricot} ?",NA,"distance de marche en minutes",NA,NA,NA
+1750,"Part de vente","Socio-economic baseline","fr","Quelle part de votre récolte de {votre culture tricot} vendez-vous habituellement ?",NA,"%",NA,NA,NA
+1751,"Revenu de la vente des cultures","Socio-economic baseline","fr","Quelle part de votre revenu total du ménage provient de la vente de {votre culture tricot} ?",NA,"%",NA,NA,NA
+1635,"Qui contrôle la production","Socio-economic baseline","fr","Qui dans votre ménage est principalement responsable de la production de {votre culture tricot} ?",NA,"-",NA,NA,NA
+1664,"Production au cours des 12 derniers mois","Socio-economic baseline","fr","Avez-vous produit {votre culture tricot} au cours des 12 derniers mois ?",NA,"-",NA,NA,NA
+1748,"Fréquence de production","Socio-economic baseline","fr","Combien de fois par an produisez-vous habituellement {votre culture tricot} ?",NA,"nombre de fois/an",NA,NA,NA
+1665,"Raison de la non-production","Socio-economic baseline","fr","En cas de non-production au cours des 12 derniers mois, pourquoi ?",NA,"",NA,NA,NA
+1749,"Pratiques de production","Socio-economic baseline","fr","Lesquelles des pratiques suivantes appliquez-vous habituellement dans la production de {votre culture tricot} ?",NA,"-",NA,NA,NA
+4960,"Stockage","Socio-economic baseline","fr","Stockez-vous vos aliments pendant une longue période avant de les consommer ?",NA,"-",NA,NA,NA
+1794,"Type de stockage","Socio-economic baseline","fr","Quel type de stockage avez-vous utilisé ?",NA,"-",NA,NA,NA
+4978,"Durée de conservation","Socio-economic baseline","fr","Si oui, quelle est la durée de conservation maximale que vous utilisez habituellement pour vos récoltes ?",NA,"jours",NA,NA,NA
+4979,"Gestion des surplus","Socio-economic baseline","fr","Comment gérez-vous les surplus de votre récolte (plus que ce que vous pouvez consommer immédiatement) ?",NA,"",NA,NA,NA
+4980,"Achat de récoltes","Socio-economic baseline","fr","Outre la production sur votre exploitation, achetez-vous également sur le marché la récolte testée lors de votre essai ?",NA,"-",NA,NA,NA
+4981,"Critères d'achat","Socio-economic baseline","fr","Si oui, sur quels critères vous basez-vous pour choisir d'acheter ? (Cochez toutes les réponses pertinentes)",NA,"-",NA,NA,NA
+1761,"Membre d'une organisation","Socio-economic baseline","fr","À quels types d'organisation appartenez-vous ?",NA,"-",NA,NA,NA
+1758,"Service de vulgarisation public","Socio-economic baseline","fr","Êtes-vous en contact avec des agents de vulgarisation publics par rapport à la production de {votre culture tricot} ?",NA,"-",NA,NA,NA
+1759,"Service de vulgarisation privé","Socio-economic baseline","fr","Êtes-vous en contact avec des agents de vulgarisation privés par rapport à la production de {votre culture tricot} ?",NA,"-",NA,NA,NA

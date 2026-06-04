@@ -6,14 +6,21 @@ library("rmarkdown")
 apiKey = Sys.getenv("CLIMMOB_API_KEY")
 user = "bioversity"
 
-templates = getProjectsCM(apiKey, server = "1000farms")
+templates = read.csv("data/sop-climmob-templates.csv")
 
-crop = "sweetpotato"
-sop = "sweetpotat"
-template_name = templates$project_name[grep(sop, templates$project_code)]
+templates = templates[!is.na(templates$crop), ]
+
+crop = templates$crop
+sop = templates$project_code
+template_name = templates$project_name
+
 version = paste0("v", Sys.Date())
 
-languages = c("en", "pt", "fr", "es", "swh")
+crop_info = read_excel(paste0("data/", crop, "-heading.xlsx"),
+                       sheet = "crop")
+
+# get the languages available for this crop
+languages = names(crop_info)[-1]
 
 # read base text table with all the languages available 
 text = read_excel("data/base-text-sop.xlsx", sheet = "text")
@@ -23,9 +30,6 @@ other_resources = read_excel("data/base-text-sop.xlsx", sheet = "other_resources
 title = read_excel("data/base-text-sop.xlsx", sheet = "title")
 
 # read table with crop information
-crop_info = read_excel(paste0("data/", crop, "-heading.xlsx"),
-                       sheet = "crop")
-
 taxa = crop_info$en[crop_info$key == "taxa"]
 
 autority = crop_info$en[crop_info$key == "autority"]
@@ -47,6 +51,13 @@ centers = paste(na.omit(unique(c(authors$affiliation_1, authors$affiliation_2)))
 authors = paste0(authors$given_name, " ", authors$family_name, " (", authors$role,  ")")
 
 authors = paste(authors, collapse = ", ")
+
+# write output paths
+output_dir = file.path("docs", crop)
+dir.create(output_dir, recursive = TRUE, showWarnings = FALSE)
+
+log_dir = file.path("logs", crop, version)
+dir.create(log_dir, recursive = TRUE, showWarnings = FALSE)
 
 for (l in seq_along(languages)) {
   
@@ -96,6 +107,11 @@ for (l in seq_along(languages)) {
                        user = user,
                        language = languages[l])
   
+  # write the survey for this crop and version as log for future check if needed
+  write.csv(survey,
+            file = file.path(log_dir, paste0(crop, "-survey-raw-", languages[l], ".csv")),
+            row.names = FALSE)
+  
   # identify the traits assessed in this SOP
   traits = which(survey$question_desc == "-" | !is.na(survey$question_perfstmt))
   
@@ -137,10 +153,6 @@ for (l in seq_along(languages)) {
   
   survey = survey[forms]
   
-  output_dir = file.path("docs", crop)
-  
-  dir.create(output_dir, recursive = TRUE, showWarnings = FALSE)
-  
   rmarkdown::render(
     input = "script/render-sop.rmd",
     output_dir = output_dir,
@@ -162,6 +174,30 @@ for (l in seq_along(languages)) {
       version = version,
       doi = doi),
     envir = new.env())
-
 }
 
+
+run_metadata = tibble(crop = crop,
+                      sop = sop,
+                      template_name = template_name,
+                      version = version,
+                      date = as.character(Sys.Date()),
+                      user = user,
+                      server = "1000farms",
+                      languages = paste(languages, collapse = ", "),
+                      r_version = R.version.string,
+                      climmobtools_version = as.character(packageVersion("ClimMobTools")))
+
+write.csv(run_metadata,
+          file = file.path(log_dir, paste0(crop, "-run-metadata.csv")),
+          row.names = FALSE)
+
+session = sessioninfo::session_info()
+
+writeLines(
+  capture.output(session),
+  con = file.path(
+    log_dir,
+    paste0(crop, "-run-sessioninfo.txt")
+  )
+)

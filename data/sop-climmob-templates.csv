@@ -1,0 +1,21 @@
+project_id,project_code,project_name,creation_date,server,crop
+52b5796bcd87,amarantemp,Amaranth OFT SOP,21/05/2026,1000farms,NA
+bc409d22e396,foragenort,Forages OFT SOP,06/03/2026,1000farms,NA
+a66cabc88baa,sweetpotat,Sweetpotato OFVT Breeding,23/01/2026,1000farms,sweetpotato
+f5844149f175,CoreTemp,CoreSOP,10/01/2026,1000farms,NA
+69a6adae7d43,riceshort,Rice OFT Seed Systems,18/09/2025,1000farms,NA
+410e0fbd70ae,potatshort,Potato OFT Seed Systems,17/09/2025,1000farms,NA
+dcc3e2ed0bf3,maizeshort,Maize OFT Seed Systems,17/09/2025,1000farms,NA
+d19a62377aff,beanshort,Common bean OFT Seed Systems,17/09/2025,1000farms,NA
+85ef57a52098,potato,Potato OFT SOP,07/05/2024,1000farms,NA
+637d58764f64,foragetemp,Forages Tropics OFT SOP,04/05/2024,1000farms,NA
+a78584c167d3,pigeonpea,Pigeonpea OFT,21/11/2023,1000farms,NA
+ad976fd8cf24,casstempWA,Cassava West Africa SOP,06/11/2023,1000farms,NA
+a2ac0849d992,training,Training SOP,29/08/2023,1000farms,NA
+9b73106290e7,cassavtemp,Cassava OFT SOP,25/04/2023,1000farms,NA
+6e2b2e996b89,millet,Millet OFT SOP,18/03/2022,1000farms,NA
+55771dd30996,cowpea,Cowpea OFT SOP,18/03/2022,1000farms,NA
+04e61b990d60,sorghum,Sorghum OFT SOP,18/03/2022,1000farms,NA
+2e3d2143ca57,groundnut,Groundnut OFT SOP,18/03/2022,1000farms,NA
+46691f3f5c41,beantempl,Common bean SOP,05/02/2022,1000farms,NA
+74981965f02a,maizetempl,Maize OFT SOP,02/02/2022,1000farms,NA
