@@ -2,7 +2,7 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18428279.svg)](https://doi.org/10.5281/zenodo.18428279)
 [![ProjStatus](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![Lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/AgrDataSci/tricot-protocols/blob/main/LICENSE)
+[![License](https://img.shields.io/badge/license-CC%20BY%204.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
 <!-- badges: end --> 
 
 ## Standard operating procedures for citizen science experiments using the tricot approach
@@ -33,3 +33,6 @@ This template is open for improvement! You can:
 - [FAIR Principles](https://www.go-fair.org/fair-principles/)
 - [DataCite Metadata Schema](https://schema.datacite.org/)
 
+## License
+
+Protocols and documentation are released under [CC BY 4.0](LICENSE), with rights held by the International Plant Genetic Resources Institute (Bioversity International).
