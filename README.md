@@ -1,6 +1,8 @@
 <!-- badges: start -->
-[![License](https://img.shields.io/badge/license%20-%20CC%20BY%20SA%204.0%20-%20%233182bd)](https://creativecommons.org/licenses/by-sa/4.0/) 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18428280.svg)](https://doi.org/10.5281/zenodo.18428279)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18428279.svg)](https://doi.org/10.5281/zenodo.18428279)
+[![ProjStatus](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
+[![Lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![License](https://img.shields.io/badge/license-CC%20BY--SA%204.0-blue.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 <!-- badges: end --> 
 
 ## Standard operating procedures for citizen science experiments using the tricot approach
