@@ -26,5 +26,5 @@ For on-farm trials without a defined crop.
 
 - [ ] Fill `protocol-metadata.xlsx` (sheets metadata, crop, authors, funders, plotsize)
 - [ ] Check the ClimMob template and add the language columns it supports
-- [ ] Render the SOP with `script/01-render-protocols.R` and review the documents in `sop/`
+- [ ] Render the SOP with `script/01-render-protocols.R` and review the documents in `sop/`, then convert them with `script/02-render-pdf.R`
 - [ ] Publish on Zenodo as a standalone record, add the concept DOI to `protocols.csv`, set status to published

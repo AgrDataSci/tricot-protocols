@@ -85,7 +85,7 @@ Status moves from `placeholder` (folder ready, metadata to fill) to `rendered` (
 
 Every protocol is a standalone Zenodo record with its own DOI, holding the SOP in all its languages. The repository itself is the collection record, [10.5281/zenodo.18428279](https://doi.org/10.5281/zenodo.18428279). The two are linked both ways.
 
-1. Fill `protocol-metadata.xlsx` and render the SOP with `script/01-render-protocols.R`.
+1. Fill `protocol-metadata.xlsx` and render the SOP with `script/01-render-protocols.R`. Review the docx files, then convert them to pdf with `script/02-render-pdf.R`, which needs [LibreOffice](https://www.libreoffice.org).
 2. Run `script/helper/helper-03-parse-protocol-metadata-as-json.R` to write `zenodo-metadata.json`. It adds `IsPartOf` the collection.
 3. Upload the PDFs as a new record, or a new version of the existing record, using that metadata.
 4. Add the concept DOI (all versions) to `protocols.csv` and set the status to `published`.
