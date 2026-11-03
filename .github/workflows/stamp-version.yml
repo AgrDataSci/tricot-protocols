@@ -1,0 +1,44 @@
+# Writes the SHA and date of every push to main into version.json,
+# so any agent reading the suite can report which commit it used.
+# A file cannot hold its own commit SHA, so the stamp records the
+# content commit that triggered this run. The stamp commit changes
+# only version.json and is skipped below, which prevents a loop.
+
+name: stamp-version
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - version.json
+
+permissions:
+  contents: write
+
+concurrency:
+  group: stamp-version
+  cancel-in-progress: false
+
+jobs:
+  stamp:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Write commit and date
+        run: |
+          date_utc=$(TZ=UTC git log -1 --format=%cd --date=format-local:%Y-%m-%dT%H:%M:%SZ "$GITHUB_SHA")
+          jq --arg sha "$GITHUB_SHA" --arg date "$date_utc" \
+            '.commit = $sha | .committed = $date' version.json > version.tmp
+          mv version.tmp version.json
+
+      - name: Commit stamp
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898333+github-actions[bot]@users.noreply.github.com"
+          git add version.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Stamp version.json with ${GITHUB_SHA::7} [skip ci]"
+          git push origin HEAD:main
