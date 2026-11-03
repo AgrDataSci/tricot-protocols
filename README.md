@@ -44,7 +44,7 @@ Protocol IDs follow `<crop>-<use case>[-<region>]`. The use cases are
 - `variety-testing`, the full SOP for on-farm variety testing
 - `seed-systems`, a shorter survey for seed system projects
 - `breeding`, on-farm variety testing designed around a breeding pipeline
-- `core` and `training`, cross-crop protocols
+- `core`, on-farm trials without a defined crop
 
 ## Protocols
 
@@ -61,7 +61,7 @@ Protocol IDs follow `<crop>-<use case>[-<region>]`. The use cases are
 | [forages-variety-testing-tropics](protocols/forages-variety-testing-tropics) | `foragetemp` | placeholder | |
 | [groundnut-variety-testing](protocols/groundnut-variety-testing) | `groundnut` | placeholder | |
 | [maize-variety-testing](protocols/maize-variety-testing) | `maizetempl` | placeholder | |
-| [millet-variety-testing](protocols/millet-variety-testing) | `millet` | placeholder | |
+| [millet-variety-testing](protocols/millet-variety-testing) (finger, pearl and other small grains) | `millet` | placeholder | |
 | [pigeonpea-variety-testing](protocols/pigeonpea-variety-testing) | `pigeonpea` | placeholder | |
 | [potato-variety-testing](protocols/potato-variety-testing) | `potato` | placeholder | |
 | [bean-seed-systems](protocols/bean-seed-systems) | `beanshort` | placeholder | |
@@ -69,7 +69,6 @@ Protocol IDs follow `<crop>-<use case>[-<region>]`. The use cases are
 | [potato-seed-systems](protocols/potato-seed-systems) | `potatshort` | placeholder | |
 | [rice-seed-systems](protocols/rice-seed-systems) | `riceshort` | placeholder | |
 | [core](protocols/core) | `CoreTemp` | placeholder | |
-| [training](protocols/training) | `training` | placeholder | |
 
 Status moves from `placeholder` (folder ready, metadata to fill) to `rendered` (SOPs generated and under review) to `published` (standalone Zenodo record with a DOI).
 

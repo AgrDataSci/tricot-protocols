@@ -1,4 +1,4 @@
-# Core tricot protocol for any crop
+# Core tricot protocol for on-farm trials without a defined crop
 
 | Field | Value |
 |---|---|
@@ -14,7 +14,9 @@
 
 ## Purpose
 
-<!-- Two or three sentences. Who runs this trial, which decision it informs, how it differs from the related protocols. -->
+For on-farm trials without a defined crop.
+
+<!-- Complete with who runs this trial and which decision it informs. -->
 
 ## Traits and data collection moments
 

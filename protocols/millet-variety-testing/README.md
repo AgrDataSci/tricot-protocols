@@ -1,4 +1,4 @@
-# Millet on-farm variety testing
+# Millet and small grains on-farm variety testing
 
 | Field | Value |
 |---|---|
@@ -14,7 +14,9 @@
 
 ## Purpose
 
-<!-- Two or three sentences. Who runs this trial, which decision it informs, how it differs from the related protocols. -->
+For finger millet, *Eleusine coracana* (L.) Gaertn., and pearl millet, *Cenchrus americanus* (L.) Morrone (syn. *Pennisetum glaucum*). It also suits other small grains such as fonio and teff.
+
+<!-- Complete with who runs this trial and which decision it informs. -->
 
 ## Traits and data collection moments
 
