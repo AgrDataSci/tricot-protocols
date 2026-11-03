@@ -1,0 +1,6 @@
+{
+  "version": "0.1",
+  "commit": null,
+  "committed": null,
+  "note": "commit and committed are stamped automatically on every push to main. Bump version by hand at each release."
+}

@@ -1,0 +1,7 @@
+crop_group,label,default_protocol_id,notes
+cereals,Cereals,maize-variety-testing,
+small-grains,Small grains,millet-variety-testing,Finger and pearl millet and other small grains such as fonio and teff; sorghum has its own protocol
+legumes,Legumes,bean-variety-testing,Grain legumes; cowpea groundnut and pigeonpea have their own protocols
+rtb,"Roots, tubers and bananas",cassava-variety-testing,Vegetatively propagated crops; plot size and planting material differ between crops
+leafy-vegetables,Leafy vegetables,amaranth-variety-testing,Crops harvested for their leaves
+forages,Forages,forages-variety-testing-tropics,Use the Nordic protocol for Nordic conditions

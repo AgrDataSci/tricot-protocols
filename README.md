@@ -22,18 +22,27 @@ Tricot is a participatory research approach where farmers test and compare three
 
 NARS breeding teams and CGIAR programmes running late-stage on-farm testing, product development teams and seed companies, and anyone planning a tricot trial. The SOPs answer one question. How do I set up, run and survey a tricot trial for this crop?
 
+## Use it with AI
+
+Paste `https://github.com/AgrDataSci/tricot-protocols` into an AI assistant with web access and ask, for example, "which questions does tricot use for cowpea?". The assistant reads [`AGENTS.md`](AGENTS.md) and [`SKILL.md`](SKILL.md). It finds the crop's own protocol, or falls back to its crop group (cereals, small grains, legumes, roots tubers and bananas, leafy vegetables, forages), or to the core protocol, and reads the question list of that protocol. In Claude, upload `SKILL.md` as a skill. To reach every layer of the suite from one link, use [ai-ready-documentation](https://github.com/AgrDataSci/ai-ready-documentation).
+
 ## How the repository is organised
 
 ```
+SKILL.md, AGENTS.md, llms.txt  instructions for AI assistants
+version.json                   version and commit, stamped on every push to main
 protocols.csv                  registry, one row per protocol, the single source of truth
 protocols/<protocol_id>/
   README.md                    protocol card with status, ClimMob template, DOI and languages
   protocol-metadata.xlsx       metadata, crop, authors, funders and plot size
   CHANGELOG.md                 changes between Zenodo versions
+  questions-<lang>.csv         questions of the protocol by data collection moment (generated)
   sop/                         rendered SOPs, <protocol_id>-sop-<lang>.docx
   logs/<version>/              ClimMob survey, clean question list and session info of each render
   zenodo-metadata.json         DataCite metadata of the standalone record (generated)
 data/                          text and figures shared by every SOP
+  crops.csv                    crops, aliases, scientific names, crop group and own protocol
+  crop-groups.csv              crop groups and their default protocol
 metadata/                      metadata of the collection record
 script/                        rendering and metadata scripts
 docs/                          paper describing the repository
@@ -52,7 +61,7 @@ Protocol IDs follow `<crop>-<use case>[-<region>]`. The use cases are
 |---|---|---|---|
 | [sweetpotato-breeding](protocols/sweetpotato-breeding) | `sweetpotat` | published | [10.5281/zenodo.20525269](https://doi.org/10.5281/zenodo.20525269) |
 | [sorghum-variety-testing](protocols/sorghum-variety-testing) | `sorghum` | rendered | |
-| [amaranth-variety-testing](protocols/amaranth-variety-testing) | `amarantemp` | placeholder | |
+| [amaranth-variety-testing](protocols/amaranth-variety-testing) (leafy amaranth) | `amarantemp` | placeholder | |
 | [bean-variety-testing](protocols/bean-variety-testing) | `beantempl` | placeholder | |
 | [cassava-variety-testing](protocols/cassava-variety-testing) | `cassavtemp` | placeholder | |
 | [cassava-variety-testing-west-africa](protocols/cassava-variety-testing-west-africa) | `casstempWA` | placeholder | |
@@ -87,7 +96,7 @@ Always cite the concept DOI, never a version DOI.
 ## Adding a protocol
 
 1. Create the project template on ClimMob.
-2. Add a row to `protocols.csv` with the template code.
+2. Add a row to `protocols.csv` with the template code, and link the crop in `data/crops.csv`.
 3. Copy a placeholder folder from `protocols/` and rename it to the new protocol ID.
 4. Follow the steps under Publishing on Zenodo.
 

@@ -1,4 +1,4 @@
-# Amaranth on-farm variety testing
+# Leafy amaranth on-farm variety testing
 
 | Field | Value |
 |---|---|
@@ -13,6 +13,8 @@
 | Part of | [Tricot protocols collection](https://doi.org/10.5281/zenodo.18428279) |
 
 ## Purpose
+
+For leafy amaranth, *Amaranthus* spp. grown for its leaves, not grain amaranth.
 
 <!-- Two or three sentences. Who runs this trial, which decision it informs, how it differs from the related protocols. -->
 

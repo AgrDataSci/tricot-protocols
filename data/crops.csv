@@ -1,0 +1,29 @@
+crop,aliases,scientific_name,crop_group,protocol_id
+maize,corn,Zea mays,cereals,maize-variety-testing
+rice,,Oryza sativa,cereals,rice-seed-systems
+wheat,,Triticum aestivum,cereals,
+barley,,Hordeum vulgare,cereals,
+sorghum,,Sorghum bicolor,small-grains,sorghum-variety-testing
+finger millet,millet,Eleusine coracana,small-grains,millet-variety-testing
+pearl millet,millet,Cenchrus americanus,small-grains,millet-variety-testing
+fonio,,Digitaria exilis,small-grains,
+teff,tef,Eragrostis tef,small-grains,
+common bean,bean,Phaseolus vulgaris,legumes,bean-variety-testing
+tepary bean,,Phaseolus acutifolius,legumes,
+cowpea,,Vigna unguiculata,legumes,cowpea-variety-testing
+groundnut,peanut,Arachis hypogaea,legumes,groundnut-variety-testing
+pigeonpea,pigeon pea,Cajanus cajan,legumes,pigeonpea-variety-testing
+bambara groundnut,,Vigna subterranea,legumes,
+chickpea,,Cicer arietinum,legumes,
+soybean,soya,Glycine max,legumes,
+cassava,,Manihot esculenta,rtb,cassava-variety-testing
+potato,,Solanum tuberosum,rtb,potato-variety-testing
+sweet potato,sweetpotato,Ipomoea batatas,rtb,sweetpotato-breeding
+yam,,Dioscorea spp.,rtb,
+banana,plantain,Musa spp.,rtb,
+taro,cocoyam,Colocasia esculenta,rtb,
+leafy amaranth,amaranth,Amaranthus spp.,leafy-vegetables,amaranth-variety-testing
+jute mallow,,Corchorus olitorius,leafy-vegetables,
+african nightshade,,Solanum spp.,leafy-vegetables,
+spider plant,,Gynandropsis gynandra,leafy-vegetables,
+forages,"forage grasses, forage legumes",,forages,forages-variety-testing-tropics

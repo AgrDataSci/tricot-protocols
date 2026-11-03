@@ -5,6 +5,7 @@
 # protocol metadata, pulls the survey from ClimMob in every language listed in
 # the crop sheet, and writes
 #   protocols/<protocol_id>/sop/<protocol_id>-sop-<lang>.docx
+#   protocols/<protocol_id>/questions-<lang>.csv  clean questions, read by agents
 #   protocols/<protocol_id>/logs/<version>/  raw survey, clean questions,
 #                                            run metadata and session info
 #
@@ -106,17 +107,21 @@ for (k in seq_len(nrow(registry))) {
               file = file.path(log_dir, paste0(protocol_id, "-survey-raw-", languages[l], ".csv")),
               row.names = FALSE)
 
-    # traits assessed in this SOP
-    traits = which(survey$question_desc == "-" | !is.na(survey$question_perfstmt))
-    traits = unique(survey$question_name[traits])
+    # traits assessed in this SOP, the questions farmers answer by ranking
+    is_trait = survey$question_desc == "-" | !is.na(survey$question_perfstmt)
+    traits = unique(survey$question_name[is_trait])
+    survey$question_type = ifelse(is_trait, "ranked trait", "question")
 
     # data collection moments in the SOP
     collection_moments = unique(survey$form)
 
+    # ranked traits carry a positive and a negative statement, drop the missing one
+    statements = ifelse(is.na(survey$question_negstm),
+                        survey$question_posstm,
+                        paste(survey$question_posstm, survey$question_negstm, sep = "; "))
+
     survey$question_desc = ifelse(survey$question_desc == "-",
-                                  paste(survey$question_posstm,
-                                        survey$question_negstm,
-                                        sep = "; "),
+                                  statements,
                                   survey$question_desc)
 
     survey$question_desc = ifelse(!is.na(survey$question_perfstmt),
@@ -129,17 +134,22 @@ for (k in seq_len(nrow(registry))) {
     rmv = which(survey$question_id %in% c(162, 163))
     if (length(rmv) > 0) survey = survey[-rmv, ]
 
-    # consent and registration questions first
-    ord = union(c(2290, 199, 206, 2296, 2297, 2298), survey$question_id)
-    ord = na.omit(match(ord, survey$question_id))
-    survey = survey[ord, ]
+    # consent and registration questions first, keeping every row so a
+    # question asked in several forms stays in each of them
+    first = match(c(2290, 199, 206, 2296, 2297, 2298), survey$question_id)
+    first = first[!is.na(first)]
+    survey = survey[c(first, setdiff(seq_len(nrow(survey)), first)), ]
 
-    survey = survey[, c("form", "question_name", "question_desc")]
+    survey = survey[, c("form", "question_id", "question_name", "question_type", "question_desc")]
 
-    # clean question list, the machine-readable version of the SOP tables
-    write.csv(survey,
-              file = file.path(log_dir, paste0(protocol_id, "-questions-", languages[l], ".csv")),
-              row.names = FALSE)
+    # clean question list, the machine-readable version of the SOP tables.
+    # The copy in the protocol folder is the one agents read, the log keeps history
+    for (path in c(protocol_dir, log_dir)) {
+      write.csv(survey,
+                file = file.path(path, paste0(ifelse(path == log_dir, paste0(protocol_id, "-"), ""),
+                                              "questions-", languages[l], ".csv")),
+                row.names = FALSE)
+    }
 
     forms = unique(survey$form)
     survey = split(survey, survey$form)
