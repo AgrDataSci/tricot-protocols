@@ -6,9 +6,11 @@ library("rmarkdown")
 apiKey = Sys.getenv("CLIMMOB_API_KEY")
 user = "bioversity"
 
-templates = read.csv("data/sop-climmob-templates.csv")
+#  templates = read.csv("data/sop-climmob-templates.csv")
 
-templates = templates[!is.na(templates$crop), ]
+# templates = templates[!is.na(templates$crop), ]
+
+templates = getProjectsCM(apiKey, server = "1000FARMS")
 
 crop = templates$crop
 sop = templates$project_code
