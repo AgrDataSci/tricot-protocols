@@ -1,88 +1,88 @@
-form,question_id,question_name,question_type,question_desc
-Participant registration form,2290,Consentimento,question,Você aceita sediar um experimento tricot e fornecer as informações necessárias?
-Participant registration form,199,Nome do participante,question,Nome do participante
-Participant registration form,206,Ponto de entrega,question,"Por favor, registre a localização GPS do local de entrega do pacote"
-Participant registration form,2296,ADM1,question,"Nome da unidade administrativa nível 1 (estado, província, região, etc)"
-Participant registration form,2297,ADM2,question,"Nome da zona administrativa de nível 2 (cidade, condado, município, área de governo local, etc.)"
-Participant registration form,2298,ADM3,question,"Nome da região administrativa de nível 3 (comunidade, vila, etc.)"
-Participant registration form,1548,Idade,question,Indique a idade do participante
-Participant registration form,2635,Sexo,question,Sexo do participante 
-Participant registration form,1581,Experiência com o cultivo,question,"Por favor, indique há quantos anos você cultiva essa planta?"
-Participant registration form,1547,Telefone,question,Número do telefone do participante 
-Vegetative - Establishment,1736,À tempo,question,O seu pacote tricot foi entregue à tempo?
-Vegetative - Establishment,1530,Data de plantio,question,Indicar a data de plantio do ensaio
-Vegetative - Establishment,1531,Ponto de GPS,question,Ponto de GPS de onde o ensaio foi estabelecido
-Vegetative - Establishment,1532,Variedade local,question,Qual o nome da variedade local que você plantou ou geralmente planta?
-Vegetative - Establishment,1536,Uso anterior do solo,question,Qual era o uso anterior do solo no local onde a parcela foi estabelecida?
-Vegetative - Establishment,1772,Modo de preparação do solo,question,Que equipamento foi usado para o preparo do solo?
-Vegetative - Establishment,1745,Inclinação,question,Qual é a inclinação da área onde você estabeleceu seu ensaio tricot?
-Vegetative - Establishment,3459,Estabelecimento da planta,ranked trait,Qual variedade se estabeleceu primeiro?; Qual variedade se estabeleceu por último?
-Vegetative - Establishment,4982,Sintomas de vírus,ranked trait,Qual variedade apresenta menos sintomas de vírus?; Qual variedade apresenta mais sintomas de vírus?
-Vegetative - Drought and heat tolerance,1552,Vigor,ranked trait,Qual variedade teve o melhor vigor?; Qual variedade teve o pior vigor?
-Vegetative - Drought and heat tolerance,1555,Tolerância à seca,ranked trait,Que variedade foi mais tolerante à seca?; Que variedade foi menos tolerante à seca?
-Vegetative - Drought and heat tolerance,2636,Pragas e enfermidades,ranked trait,Que variedade é mais resistente às pragas e enfermidades?; Que variedade é menos resistente às pragas e enfermidades?
-Harvest - Technician assessment,4953,Peso total da rama,question,Peso total da rama (kg) na parcela 
-Harvest - Technician assessment,4956,Número de plantas colhidas,question,Numero total de plantas colhidas na parcela
-Harvest - Technician assessment,4955,Número de plantas com raízes,question,Número total de raízes comerciais colhidas na parcela
-Harvest - Technician assessment,2313,Número de raízes com valor comercial,question,Número de raízes com valor comercial
-Harvest - Technician assessment,2314,Número de raízes não-comerciais,question,Número total de raízes não-comerciais colhidas na parcela
-Harvest - Technician assessment,2315,Peso total de raízes comerciais,question,Peso total de raízes comerciais na parcela
-Harvest - Technician assessment,2316,Peso total de raízes não-comerciais,question,Peso total de raízes não-comerciais na parcela
-Harvest - Technician assessment,2399,Unidade de medida rendimento,question,Qual foi a unidade de medida usada para medir o redimento?
-Harvest - Farmer assessment,1558,Rendimento,ranked trait,Qual variedade teve o maior rendimento total?; Qual variedade teve o menor rendimento total?
-Harvest - Farmer assessment,4949,Rendimento comercial,ranked trait,Qual variedade teve o maior rendimento com valor comercial?; Qual variedade teve o menor rendimento com valor comercial?
-Harvest - Farmer assessment,2320,Tamanho das raízes,ranked trait,Qual variedade teve as maiores raízes?; Qual variedade teve as menores raízes?
-Harvest - Farmer assessment,2322,Formato das raízes,ranked trait,Qual variedade teve as raízes com melhor formato?; Qual variedade teve as raízes com pior formato?
-Harvest - Farmer assessment,4950,Cor da raízes,ranked trait,Qual variedade possui a melhor cor da casca?; Qual variedade possui a pior cor da casca?
-Harvest - Farmer assessment,4951,Resistência ao gorgulho,ranked trait,Qual variedade é mais resistente ao gorgulho?; Qual variedade é menos resistente ao gorgulho?
-Harvest - Farmer assessment,4952,Resistência ao milípede,ranked trait,Qual variedade é mais resistente ao maria-café/milípede/piolho-de-cobra?; Qual variedade é menos resistente ao maria-café/milípede/piolho-de-cobra?
-Harvest - Farmer assessment,1561,Comercialização,ranked trait,Qual variedade tem maior valor comercial?; Qual variedade tem menor valor comercial?
-Harvest - Farmer assessment,1735,Desempenho geral,ranked trait,"Em geral, qual variedade foi a melhor?; Em geral, qual variedade foi a pior?"
-Harvest - Farmer assessment,1596,Por que melhor,question,Por que foi a melhor?
-Harvest - Farmer assessment,1704,Por que pior,question,Por que foi a pior?
-Harvest - Farmer assessment,205,Comparação com a local,ranked trait,"A variedade A, B, C é melhor ou pior do que a variedade que você planta atualmente?"
-Post-harvest - Food product evaluation,4957,Métodos de cozimento,question,Qual método de cozimento você costuma usar para preparar o seu cultivo em sua casa?
-Post-harvest - Food product evaluation,1562,Sabor,ranked trait,Qual variedade tem o melhor sabor?; Qual variedade tem o pior sabor?
-Post-harvest - Food product evaluation,2803,Textura após cozimento,ranked trait,Qual variedade possui a melhor textura depois de cozida?; Qual variedade possui a pior textura depois de cozida?
-Post-harvest - Food product evaluation,1735,Desempenho geral,ranked trait,"Em geral, qual variedade foi a melhor?; Em geral, qual variedade foi a pior?"
-Post-harvest - Food product evaluation,4958,Melhores atributos,question,Quais atributos tornam esta variedade a melhor para você? (Marque todas as opções aplicáveis)
-Post-harvest - Food product evaluation,4959,Piores atributos,question,Quais atributos tornam esta variedade a pior para você? (Marque todas as opções aplicáveis)
-Post-harvest - Food product evaluation,1778,Plantar novamente,question,"Se houvesse sementes disponíveis para as três opções, quais variedades você gostaria de cultivar na próxima estação?"
-Socio-economic baseline,1548,Idade,question,Indique a idade do participante
-Socio-economic baseline,2635,Sexo,question,Sexo do participante 
-Socio-economic baseline,1550,Estado civil,question,Estado civil do participante
-Socio-economic baseline,1624,Ocupação,question,Qual a ocupação principal do participante?
-Socio-economic baseline,1549,Escolaridade,question,"Por favor, indique o seu nível de escolaridade mais alto"
-Socio-economic baseline,1621,Leitura,question,O entrevistado consegue ler em Português?
-Socio-economic baseline,1649,Leitura em língua local,question,O entrevistado consegue ler no idioma local?
-Socio-economic baseline,1623,Tamanho da família,question,Número de pessoas que moram juntas e compartilham refeições por mais de 6 meses por ano
-Socio-economic baseline,4311,Familiares com menos de 18 anos,question,Quantas pessoas menores de 18 anos moram na sua casa?
-Socio-economic baseline,1747,Cultura principal,question,Qual é a principal cultura agrícola que você produz atualmente?
-Socio-economic baseline,1746,Outras culturas,question,Quais são as outras culturas agrícolas que você produz?
-Socio-economic baseline,1581,Experiência com o cultivo,question,"Por favor, indique há quantos anos você cultiva essa planta?"
-Socio-economic baseline,1779,Experiência com tricot,question,"Você já participou de um experimento tricot antes? Se sim, quantas vezes? 0 se for a primeira vez."
-Socio-economic baseline,1637,Controle da troca de sementes,question,Quem em sua casa é o principal responsável pela coleta ou troca de sementes do {seu cultivo tricot}?
-Socio-economic baseline,1756,Fonte das sementes,question,Qual é a origem das sementes de {seu cultivo tricot}?
-Socio-economic baseline,1754,Número de variedades,question,Quantas variedades diferentes de {seu cultivo tricot} sua família produz?
-Socio-economic baseline,1755,Nome da variedade,question,Qual o nome da(s) variedade(s) do seu cultivo no seu experimento tricot que você produz?
-Socio-economic baseline,1757,Marca da semente,question,"A semente que você compra tem marca e rótulo? Se sim, por favor, indique o nome."
-Socio-economic baseline,1752,Modos de venda,question,Como você geralmente vende a sua produção de {seu cultivo tricot}?
-Socio-economic baseline,1636,Controle das vendas,question,Quem em sua casa é o principal responsável pela venda da sua produção de {seu cultivo tricot}?
-Socio-economic baseline,1753,Distância do mercado,question,Qual a distância do mercado ou local mais próximo onde você vende {seu cultivo tricot} até sua fazenda?
-Socio-economic baseline,1750,Porcentagem de venda,question,Qual a porcentagem da sua colheita de {seu cultivo tricot} que você costuma vender?
-Socio-economic baseline,1751,Renda com a venda,question,Qual a porcentagem da sua renda familiar total proveniente da venda da produção do {seu cultivo tricot}?
-Socio-economic baseline,1635,Quem controla a produção,question,Quem em sua casa é o principal responsável pela produção de {seu cultivo tricot}?
-Socio-economic baseline,1664,Produção nos últimos 12 meses,question,Você produziu {seu cultivo tricot} nos últimos 12 meses?
-Socio-economic baseline,1748,Frequência de produção,question,Quantas vezes por ano você costuma produzir {seu cultivo tricot}?
-Socio-economic baseline,1665,Motivo de não produção,question,"Se não houve produção nos últimos 12 meses, por quê?"
-Socio-economic baseline,1749,Práticas de produção,question,Quais das seguintes práticas você costuma aplicar na produção de {seu cultivo tricot}?
-Socio-economic baseline,4960,Armazenamento,question,Você armazena {seu cultivo tricot} por um longo período antes do consumo?
-Socio-economic baseline,1794,Tipo de armazenamento,question,Que tipo de armazenamento você usa?
-Socio-economic baseline,4978,Duração do armazenamento,question,"Em caso afirmativo, qual é a duração máxima de armazenamento que você normalmente mantém a colheita?"
-Socio-economic baseline,4979,Lidando com o excedente,question,Como você lida com o excedente da sua colheita (mais do que você pode comer imediatamente)?
-Socio-economic baseline,4980,Compra de produtos,question,"Além de produzir em sua fazenda, você também compra {seu cultivo tricot} no mercado?"
-Socio-economic baseline,4981,Critérios de compra,question,"Em caso afirmativo, com base em quais critérios você escolhe comprar? (Marque todas as opções aplicáveis)"
-Socio-economic baseline,1761,Membro de uma organização,question,A que tipos de organização você pertence?
-Socio-economic baseline,1758,Serviço público de extensão,question,Você está em contato com serviços governamentais/públicos de extensão em relação à produção do {seu cultivo tricot}?
-Socio-economic baseline,1759,Serviço de extensão privado,question,Você está em contato com serviços de extensão privados em relação à produção do {seu cultivo tricot}?
-Data manager inputs,5098,Zona agroecológica,question,Indique o nome da zona agroecológica onde a parcela foi estabelecida
+"form","question_id","question_name","question_type","question_desc"
+"Participant registration form",2290,"Consentimento","question","Você aceita sediar um experimento tricot e fornecer as informações necessárias?"
+"Participant registration form",199,"Nome do participante","question","Nome do participante"
+"Participant registration form",206,"Ponto de entrega","question","Por favor, registre a localização GPS do local de entrega do pacote"
+"Participant registration form",2296,"ADM1","question","Nome da unidade administrativa nível 1 (estado, província, região, etc)"
+"Participant registration form",2297,"ADM2","question","Nome da zona administrativa de nível 2 (cidade, condado, município, área de governo local, etc.)"
+"Participant registration form",2298,"ADM3","question","Nome da região administrativa de nível 3 (comunidade, vila, etc.)"
+"Participant registration form",1548,"Idade","question","Indique a idade do participante"
+"Participant registration form",2635,"Sexo","question","Sexo do participante "
+"Participant registration form",1581,"Experiência com o cultivo","question","Por favor, indique há quantos anos você cultiva essa planta?"
+"Participant registration form",1547,"Telefone","question","Número do telefone do participante "
+"Vegetative - Establishment",1736,"À tempo","question","O seu pacote tricot foi entregue à tempo?"
+"Vegetative - Establishment",1530,"Data de plantio","question","Indicar a data de plantio do ensaio"
+"Vegetative - Establishment",1531,"Ponto de GPS","question","Ponto de GPS de onde o ensaio foi estabelecido"
+"Vegetative - Establishment",1532,"Variedade local","question","Qual o nome da variedade local que você plantou ou geralmente planta?"
+"Vegetative - Establishment",1536,"Uso anterior do solo","question","Qual era o uso anterior do solo no local onde a parcela foi estabelecida?"
+"Vegetative - Establishment",1772,"Modo de preparação do solo","question","Que equipamento foi usado para o preparo do solo?"
+"Vegetative - Establishment",1745,"Inclinação","question","Qual é a inclinação da área onde você estabeleceu seu ensaio tricot?"
+"Vegetative - Establishment",3459,"Estabelecimento da planta","ranked trait","Qual variedade se estabeleceu primeiro?; Qual variedade se estabeleceu por último?"
+"Vegetative - Establishment",4982,"Sintomas de vírus","ranked trait","Qual variedade apresenta menos sintomas de vírus?; Qual variedade apresenta mais sintomas de vírus?"
+"Vegetative - Drought and heat tolerance",1552,"Vigor","ranked trait","Qual variedade teve o melhor vigor?; Qual variedade teve o pior vigor?"
+"Vegetative - Drought and heat tolerance",1555,"Tolerância à seca","ranked trait","Que variedade foi mais tolerante à seca?; Que variedade foi menos tolerante à seca?"
+"Vegetative - Drought and heat tolerance",2636,"Pragas e enfermidades","ranked trait","Que variedade é mais resistente às pragas e enfermidades?; Que variedade é menos resistente às pragas e enfermidades?"
+"Harvest - Technician assessment",4953,"Peso total da rama","question","Peso total da rama (kg) na parcela "
+"Harvest - Technician assessment",4956,"Número de plantas colhidas","question","Numero total de plantas colhidas na parcela"
+"Harvest - Technician assessment",4955,"Número de plantas com raízes","question","Número total de raízes comerciais colhidas na parcela"
+"Harvest - Technician assessment",2313,"Número de raízes com valor comercial","question","Número de raízes com valor comercial"
+"Harvest - Technician assessment",2314,"Número de raízes não-comerciais","question","Número total de raízes não-comerciais colhidas na parcela"
+"Harvest - Technician assessment",2315,"Peso total de raízes comerciais","question","Peso total de raízes comerciais na parcela"
+"Harvest - Technician assessment",2316,"Peso total de raízes não-comerciais","question","Peso total de raízes não-comerciais na parcela"
+"Harvest - Technician assessment",2399,"Unidade de medida rendimento","question","Qual foi a unidade de medida usada para medir o redimento?"
+"Harvest - Farmer assessment",1558,"Rendimento","ranked trait","Qual variedade teve o maior rendimento total?; Qual variedade teve o menor rendimento total?"
+"Harvest - Farmer assessment",4949,"Rendimento comercial","ranked trait","Qual variedade teve o maior rendimento com valor comercial?; Qual variedade teve o menor rendimento com valor comercial?"
+"Harvest - Farmer assessment",2320,"Tamanho das raízes","ranked trait","Qual variedade teve as maiores raízes?; Qual variedade teve as menores raízes?"
+"Harvest - Farmer assessment",2322,"Formato das raízes","ranked trait","Qual variedade teve as raízes com melhor formato?; Qual variedade teve as raízes com pior formato?"
+"Harvest - Farmer assessment",4950,"Cor da raízes","ranked trait","Qual variedade possui a melhor cor da casca?; Qual variedade possui a pior cor da casca?"
+"Harvest - Farmer assessment",4951,"Resistência ao gorgulho","ranked trait","Qual variedade é mais resistente ao gorgulho?; Qual variedade é menos resistente ao gorgulho?"
+"Harvest - Farmer assessment",4952,"Resistência ao milípede","ranked trait","Qual variedade é mais resistente ao maria-café/milípede/piolho-de-cobra?; Qual variedade é menos resistente ao maria-café/milípede/piolho-de-cobra?"
+"Harvest - Farmer assessment",1561,"Comercialização","ranked trait","Qual variedade tem maior valor comercial?; Qual variedade tem menor valor comercial?"
+"Harvest - Farmer assessment",1735,"Desempenho geral","ranked trait","Em geral, qual variedade foi a melhor?; Em geral, qual variedade foi a pior?"
+"Harvest - Farmer assessment",1596,"Por que melhor","question","Por que foi a melhor?"
+"Harvest - Farmer assessment",1704,"Por que pior","question","Por que foi a pior?"
+"Harvest - Farmer assessment",205,"Comparação com a local","ranked trait","A variedade A, B, C é melhor ou pior do que a variedade que você planta atualmente?"
+"Post-harvest - Food product evaluation",4957,"Métodos de cozimento","question","Qual método de cozimento você costuma usar para preparar o seu cultivo em sua casa?"
+"Post-harvest - Food product evaluation",1562,"Sabor","ranked trait","Qual variedade tem o melhor sabor?; Qual variedade tem o pior sabor?"
+"Post-harvest - Food product evaluation",2803,"Textura após cozimento","ranked trait","Qual variedade possui a melhor textura depois de cozida?; Qual variedade possui a pior textura depois de cozida?"
+"Post-harvest - Food product evaluation",1735,"Desempenho geral","ranked trait","Em geral, qual variedade foi a melhor?; Em geral, qual variedade foi a pior?"
+"Post-harvest - Food product evaluation",4958,"Melhores atributos","question","Quais atributos tornam esta variedade a melhor para você? (Marque todas as opções aplicáveis)"
+"Post-harvest - Food product evaluation",4959,"Piores atributos","question","Quais atributos tornam esta variedade a pior para você? (Marque todas as opções aplicáveis)"
+"Post-harvest - Food product evaluation",1778,"Plantar novamente","question","Se houvesse sementes disponíveis para as três opções, quais variedades você gostaria de cultivar na próxima estação?"
+"Socio-economic baseline",1548,"Idade","question","Indique a idade do participante"
+"Socio-economic baseline",2635,"Sexo","question","Sexo do participante "
+"Socio-economic baseline",1550,"Estado civil","question","Estado civil do participante"
+"Socio-economic baseline",1624,"Ocupação","question","Qual a ocupação principal do participante?"
+"Socio-economic baseline",1549,"Escolaridade","question","Por favor, indique o seu nível de escolaridade mais alto"
+"Socio-economic baseline",1621,"Leitura","question","O entrevistado consegue ler em Português?"
+"Socio-economic baseline",1649,"Leitura em língua local","question","O entrevistado consegue ler no idioma local?"
+"Socio-economic baseline",1623,"Tamanho da família","question","Número de pessoas que moram juntas e compartilham refeições por mais de 6 meses por ano"
+"Socio-economic baseline",4311,"Familiares com menos de 18 anos","question","Quantas pessoas menores de 18 anos moram na sua casa?"
+"Socio-economic baseline",1747,"Cultura principal","question","Qual é a principal cultura agrícola que você produz atualmente?"
+"Socio-economic baseline",1746,"Outras culturas","question","Quais são as outras culturas agrícolas que você produz?"
+"Socio-economic baseline",1581,"Experiência com o cultivo","question","Por favor, indique há quantos anos você cultiva essa planta?"
+"Socio-economic baseline",1779,"Experiência com tricot","question","Você já participou de um experimento tricot antes? Se sim, quantas vezes? 0 se for a primeira vez."
+"Socio-economic baseline",1637,"Controle da troca de sementes","question","Quem em sua casa é o principal responsável pela coleta ou troca de sementes do {seu cultivo tricot}?"
+"Socio-economic baseline",1756,"Fonte das sementes","question","Qual é a origem das sementes de {seu cultivo tricot}?"
+"Socio-economic baseline",1754,"Número de variedades","question","Quantas variedades diferentes de {seu cultivo tricot} sua família produz?"
+"Socio-economic baseline",1755,"Nome da variedade","question","Qual o nome da(s) variedade(s) do seu cultivo no seu experimento tricot que você produz?"
+"Socio-economic baseline",1757,"Marca da semente","question","A semente que você compra tem marca e rótulo? Se sim, por favor, indique o nome."
+"Socio-economic baseline",1752,"Modos de venda","question","Como você geralmente vende a sua produção de {seu cultivo tricot}?"
+"Socio-economic baseline",1636,"Controle das vendas","question","Quem em sua casa é o principal responsável pela venda da sua produção de {seu cultivo tricot}?"
+"Socio-economic baseline",1753,"Distância do mercado","question","Qual a distância do mercado ou local mais próximo onde você vende {seu cultivo tricot} até sua fazenda?"
+"Socio-economic baseline",1750,"Porcentagem de venda","question","Qual a porcentagem da sua colheita de {seu cultivo tricot} que você costuma vender?"
+"Socio-economic baseline",1751,"Renda com a venda","question","Qual a porcentagem da sua renda familiar total proveniente da venda da produção do {seu cultivo tricot}?"
+"Socio-economic baseline",1635,"Quem controla a produção","question","Quem em sua casa é o principal responsável pela produção de {seu cultivo tricot}?"
+"Socio-economic baseline",1664,"Produção nos últimos 12 meses","question","Você produziu {seu cultivo tricot} nos últimos 12 meses?"
+"Socio-economic baseline",1748,"Frequência de produção","question","Quantas vezes por ano você costuma produzir {seu cultivo tricot}?"
+"Socio-economic baseline",1665,"Motivo de não produção","question","Se não houve produção nos últimos 12 meses, por quê?"
+"Socio-economic baseline",1749,"Práticas de produção","question","Quais das seguintes práticas você costuma aplicar na produção de {seu cultivo tricot}?"
+"Socio-economic baseline",4960,"Armazenamento","question","Você armazena {seu cultivo tricot} por um longo período antes do consumo?"
+"Socio-economic baseline",1794,"Tipo de armazenamento","question","Que tipo de armazenamento você usa?"
+"Socio-economic baseline",4978,"Duração do armazenamento","question","Em caso afirmativo, qual é a duração máxima de armazenamento que você normalmente mantém a colheita?"
+"Socio-economic baseline",4979,"Lidando com o excedente","question","Como você lida com o excedente da sua colheita (mais do que você pode comer imediatamente)?"
+"Socio-economic baseline",4980,"Compra de produtos","question","Além de produzir em sua fazenda, você também compra {seu cultivo tricot} no mercado?"
+"Socio-economic baseline",4981,"Critérios de compra","question","Em caso afirmativo, com base em quais critérios você escolhe comprar? (Marque todas as opções aplicáveis)"
+"Socio-economic baseline",1761,"Membro de uma organização","question","A que tipos de organização você pertence?"
+"Socio-economic baseline",1758,"Serviço público de extensão","question","Você está em contato com serviços governamentais/públicos de extensão em relação à produção do {seu cultivo tricot}?"
+"Socio-economic baseline",1759,"Serviço de extensão privado","question","Você está em contato com serviços de extensão privados em relação à produção do {seu cultivo tricot}?"
+"Data manager inputs",5098,"Zona agroecológica","question","Indique o nome da zona agroecológica onde a parcela foi estabelecida"

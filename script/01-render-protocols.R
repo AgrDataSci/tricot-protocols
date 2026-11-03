@@ -98,10 +98,10 @@ for (k in seq_len(nrow(registry))) {
     names(other_resources_i) = c("text", "link")
 
     # survey in the ClimMob template
-    survey = getSurveyCM(apiKey,
-                         project = sop,
-                         user = user,
-                         language = languages[l])
+    survey = getSurvey(apiKey,
+                       project = sop,
+                       user = user,
+                       language = languages[l])
 
     write.csv(survey,
               file = file.path(log_dir, paste0(protocol_id, "-survey-raw-", languages[l], ".csv")),

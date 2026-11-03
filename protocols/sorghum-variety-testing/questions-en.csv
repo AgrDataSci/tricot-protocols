@@ -1,96 +1,96 @@
-form,question_id,question_name,question_type,question_desc
-Participant registration form,2290,Consent,question,Are you willingly to accept hosting a tricot trial and provide required information from the trial?
-Participant registration form,199,Participant name,question,Participant name
-Participant registration form,206,Point of delivery,question,Please register the GPS location where the seeds were delivered
-Participant registration form,2296,ADM1,question,"Name of administrative zone level 1 (state, province, region, etc)"
-Participant registration form,2297,ADM2,question,"Name of administrative zone level 2 (city, county, town, local govern area, etc)"
-Participant registration form,2298,ADM3,question,"Name of administrative region level 3 (community, village etc)"
-Participant registration form,1548,Age,question,Please indicate your age
-Participant registration form,2635,Gender,question,Please select your gender
-Participant registration form,1581,Experience with the crop,question,Please indicate how many years you have growing the crop?
-Participant registration form,1779,Experience with tricot,question,"Have you contributed to a tricot trial before? If yes, how many times? Zero if first time."
-Emergence,1736,On time,question,Was your trial package delivered on time?
-Emergence,1738,Protocol,question,"Have you followed the trial protocol (plot size, density) when establishing your trial?"
-Emergence,1530,Planting date,question,Date of trial establishment
-Emergence,1531,Trial GPS,question,The GPS location of the on-farm trial
-Emergence,1536,Previous land use,question,What was the previous land use of the on-farm plot site?
-Emergence,1772,Mode of land preparation,question,What equipment was used for land preparation?
-Emergence,1745,Slope,question,What is the slope of the area you established your tricot trial?
-Emergence,1776,Plot size,question,What was the plot size?
-Emergence,1768,Plot size unit,question,What is the unit used the measure the plot size
-Emergence,1532,Local variety,question,What is the name of the local variety planted in the trial as check?
-Emergence,1551,Germination,ranked trait,Which option germinated more plants?; Which option germinated less plants?
-Emergence,1553,Diseases resistance,ranked trait,Which option is more resistant to diseases?; Which option is more susceptible to diseases?
-Vegetative,1593,Plant damage,question,Did any plant suffer damage during the trial?
-Vegetative,1591,Plant damage how,question,"If any damage, do you know what was the cause for damage in "
-Vegetative,1539,Diseases any,question,Did you find any disease in the trial?
-Vegetative,1594,Diseases where,question,Which part of the plant was affected by the disease?
-Vegetative,1553,Diseases resistance,ranked trait,Which option is more resistant to diseases?; Which option is more susceptible to diseases?
-Vegetative,1555,Drought tolerance,ranked trait,Which option is more tolerant to drought?; Which option is more susceptible to drought?
-Vegetative,1564,Striga resistance,ranked trait,Which option is more resistant to striga?; Which option is more susceptible to striga?
-Vegetative,1571,Antracnosis resistance,ranked trait,Which option is more resistant to antracnosis?; Which option is more susceptible to antracnosis?
-Vegetative,1556,Plant survival,ranked trait,Which option has the higher plant survival rate?; Which option has the lower plant survival rate?
-Physiological maturity,1564,Striga resistance,ranked trait,Which option is more resistant to striga?; Which option is more susceptible to striga?
-Physiological maturity,1571,Antracnosis resistance,ranked trait,Which option is more resistant to antracnosis?; Which option is more susceptible to antracnosis?
-Physiological maturity,1556,Plant survival,ranked trait,Which option has the higher plant survival rate?; Which option has the lower plant survival rate?
-Physiological maturity,1565,Panicle length,ranked trait,Which option has the larger panicles?; Which option has the smaller panicles?
-Physiological maturity,1557,Maturity,ranked trait,Which option has the earlier maturity?; Which option has the later maturity?
-Technician assessment - Reproductive,1610,Flowering (days to 50%),question,Days to 50% flowering
-Technician assessment - Reproductive,1590,Plant height,question,What is plant height of 
-Technician assessment - Reproductive,1762,Plant population,question,What is the number of plants in 
-Farmer assessment - Harvest,1740,Irrigation,question,Did you use an irrigation system on your tricot trial?
-Farmer assessment - Harvest,1741,Fertilizer,question,Did you use fertilizers on your tricot trial?
-Farmer assessment - Harvest,1742,Fertilizer frequency,question,"If yes, how many times you applied the fertilizer? Zero if none."
-Farmer assessment - Harvest,1743,Pesticide,question,Did you use pesticides on your tricot trial?
-Farmer assessment - Harvest,1744,Pesticide frequency,question,"If yes, how many times you applied the pesticide? Zero if none."
-Farmer assessment - Harvest,1542,Harvesting date,question,On which day did you harvest the plot
-Farmer assessment - Harvest,1568,Threshabilty,ranked trait,Which option is easier to thresh? ; Which option is more difficult to thresh?
-Farmer assessment - Harvest,1570,Stover yield,ranked trait,Which option has the higher stover yield?; Which option has the lower stover yield?
-Farmer assessment - Harvest,1558,Yield,ranked trait,Which option has the higher yield?; Which option has the lower yield?
-Farmer assessment - Harvest,1559,Grain size,ranked trait,Which option has the best grain/seed size for the target market?; Which option has the worst grain/seed size for the target market?
-Farmer assessment - Harvest,1572,Grain hardness,ranked trait,Which option has the best hardness for the target use?; Which option has the worst hardness for the target use?
-Farmer assessment - Harvest,1560,Grain colour,ranked trait,Which option has the best grain/seed colour for the target market?; Which option has the worst grain/seed colour for the target market?
-Farmer assessment - Harvest,1562,Taste,ranked trait,Which option has the best taste?; Which option has the worst taste?
-Farmer assessment - Harvest,1569,Malting quality,ranked trait,Which option has better malting quality?; Which option has the worse malting quality?
-Farmer assessment - Harvest,1561,Marketability,ranked trait,Which option is easier to sell?; Which option is more difficult to sell?
-Farmer assessment - Harvest,204,Overall preference,ranked trait,"Overall, which option was the best?; Overall, which option was the worst?"
-Farmer assessment - Harvest,1596,Best why,question,Why do you indicate this option as the best?
-Farmer assessment - Harvest,1704,Worst why,question,Why you indicated this option as the worst?
-Farmer assessment - Harvest,205,Overall vs Local,ranked trait,"Overall, is A, B, C better or worse than the one that you currently grow?"
-Farmer assessment - Harvest,1778,Grow again,question,"If seeds were available for all three options, which option(s) would you like to grow in the next season?"
-Technician assessment - Harvest,1762,Plant population,question,What is the number of plants in 
-Technician assessment - Harvest,1589,Yield (quantitative),question,The yield of 
-Technician assessment - Harvest,1841,Yield unit,question,Which unit did you use to measure the yield?
-Socio-economic baseline,1548,Age,question,Please indicate your age
-Socio-economic baseline,2635,Gender,question,Please select your gender
-Socio-economic baseline,1550,Civil status,question,Please indicate your civil status
-Socio-economic baseline,1624,Occupation,question,What is the main occupation of the respondent?
-Socio-economic baseline,1549,Education,question,Please select your highest degree obtained
-Socio-economic baseline,1620,Education years,question,For how many years did you attend school?
-Socio-economic baseline,1621,Reading,question,Is the respondent able to read in English?
-Socio-economic baseline,1649,Reading Local Language,question,Is the respondent able to read in the local language?
-Socio-economic baseline,1622,Type of household,question,What is the type of household?
-Socio-economic baseline,1623,Household size,question,Number of persons living together and sharing meals for more than 6 months a year
-Socio-economic baseline,1747,Main crop,question,What is the most important crop that you produce?
-Socio-economic baseline,1746,Other crops,question,What are the crops that you produce?
-Socio-economic baseline,1581,Experience with the crop,question,Please indicate how many years you have growing the crop?
-Socio-economic baseline,1779,Experience with tricot,question,"Have you contributed to a tricot trial before? If yes, how many times? Zero if first time."
-Socio-economic baseline,1637,Who controls seed exchange,question,Who in your household is mainly responsible for {your tricot crop} seed saving or seed exchange?
-Socio-economic baseline,1756,Varieties source,question,What is the source of {your tricot crop} seed?
-Socio-economic baseline,1754,Number of varieties,question,How many different varieties of {your tricot crop} does your household produce?
-Socio-economic baseline,1755,Variety name,question,What is the name of the variety(ies) that you commonly plant in your field?
-Socio-economic baseline,1757,Variety brand,question,"Does the seed that you buy have a brand and a label? If yes, please indicate the name."
-Socio-economic baseline,1752,Ways of selling,question,How do you usually sell {your tricot crop}?
-Socio-economic baseline,1636,Who controls selling,question,Who in your household is mainly responsible for {your tricot crop} selling?
-Socio-economic baseline,1753,Distance to market,question,How far is the nearest market or place you sell your {your tricot crop} from your farm?
-Socio-economic baseline,1750,Sell share,question,What share of your {your tricot crop} harvest do you usually sell?
-Socio-economic baseline,1751,Income crop sell,question,What share of your total household income comes from selling {your tricot crop}? 
-Socio-economic baseline,1635,Who controls production,question,Who in your household is mainly responsible for {your tricot crop} production?
-Socio-economic baseline,1664,Production last 12 months,question,Did you produced {your tricot crop} during the past 12 months?
-Socio-economic baseline,1748,Frequency of production,question,How many times per year you usually produce your {tricot crop}?
-Socio-economic baseline,1665,Reason no production,question,"If no production during the past 12 months, why? "
-Socio-economic baseline,1749,Production practices,question,Which of the following practices do you usually apply in {your tricot crop} production?
-Socio-economic baseline,1761,Member of an organization,question,To what types of organization do you belong? 
-Socio-economic baseline,1758,Public extension service,question,Are you in contact with government/public extension services in relation with {your tricot crop} production?
-Socio-economic baseline,1759,Private extension service,question,Are you in contact with private extension services in relation with {your tricot crop} production?
-Data manager inputs,5098,Agroecological zone,question,Please indicate the agroecological zone where the plot was established
+"form","question_id","question_name","question_type","question_desc"
+"Participant registration form",2290,"Consent","question","Are you willingly to accept hosting a tricot trial and provide required information from the trial?"
+"Participant registration form",199,"Participant name","question","Participant name"
+"Participant registration form",206,"Point of delivery","question","Please register the GPS location where the seeds were delivered"
+"Participant registration form",2296,"ADM1","question","Name of administrative zone level 1 (state, province, region, etc)"
+"Participant registration form",2297,"ADM2","question","Name of administrative zone level 2 (city, county, town, local govern area, etc)"
+"Participant registration form",2298,"ADM3","question","Name of administrative region level 3 (community, village etc)"
+"Participant registration form",1548,"Age","question","Please indicate your age"
+"Participant registration form",2635,"Gender","question","Please select your gender"
+"Participant registration form",1581,"Experience with the crop","question","Please indicate how many years you have growing the crop?"
+"Participant registration form",1779,"Experience with tricot","question","Have you contributed to a tricot trial before? If yes, how many times? Zero if first time."
+"Emergence",1736,"On time","question","Was your trial package delivered on time?"
+"Emergence",1738,"Protocol","question","Have you followed the trial protocol (plot size, density) when establishing your trial?"
+"Emergence",1530,"Planting date","question","Date of trial establishment"
+"Emergence",1531,"Trial GPS","question","The GPS location of the on-farm trial"
+"Emergence",1536,"Previous land use","question","What was the previous land use of the on-farm plot site?"
+"Emergence",1772,"Mode of land preparation","question","What equipment was used for land preparation?"
+"Emergence",1745,"Slope","question","What is the slope of the area you established your tricot trial?"
+"Emergence",1776,"Plot size","question","What was the plot size?"
+"Emergence",1768,"Plot size unit","question","What is the unit used the measure the plot size"
+"Emergence",1532,"Local variety","question","What is the name of the local variety planted in the trial as check?"
+"Emergence",1551,"Germination","ranked trait","Which option germinated more plants?; Which option germinated less plants?"
+"Emergence",1553,"Diseases resistance","ranked trait","Which option is more resistant to diseases?; Which option is more susceptible to diseases?"
+"Vegetative",1593,"Plant damage","question","Did any plant suffer damage during the trial?"
+"Vegetative",1591,"Plant damage how","question","If any damage, do you know what was the cause for damage in "
+"Vegetative",1539,"Diseases any","question","Did you find any disease in the trial?"
+"Vegetative",1594,"Diseases where","question","Which part of the plant was affected by the disease?"
+"Vegetative",1553,"Diseases resistance","ranked trait","Which option is more resistant to diseases?; Which option is more susceptible to diseases?"
+"Vegetative",1555,"Drought tolerance","ranked trait","Which option is more tolerant to drought?; Which option is more susceptible to drought?"
+"Vegetative",1564,"Striga resistance","ranked trait","Which option is more resistant to striga?; Which option is more susceptible to striga?"
+"Vegetative",1571,"Antracnosis resistance","ranked trait","Which option is more resistant to antracnosis?; Which option is more susceptible to antracnosis?"
+"Vegetative",1556,"Plant survival","ranked trait","Which option has the higher plant survival rate?; Which option has the lower plant survival rate?"
+"Physiological maturity",1564,"Striga resistance","ranked trait","Which option is more resistant to striga?; Which option is more susceptible to striga?"
+"Physiological maturity",1571,"Antracnosis resistance","ranked trait","Which option is more resistant to antracnosis?; Which option is more susceptible to antracnosis?"
+"Physiological maturity",1556,"Plant survival","ranked trait","Which option has the higher plant survival rate?; Which option has the lower plant survival rate?"
+"Physiological maturity",1565,"Panicle length","ranked trait","Which option has the larger panicles?; Which option has the smaller panicles?"
+"Physiological maturity",1557,"Maturity","ranked trait","Which option has the earlier maturity?; Which option has the later maturity?"
+"Technician assessment - Reproductive",1610,"Flowering (days to 50%)","question","Days to 50% flowering"
+"Technician assessment - Reproductive",1590,"Plant height","question","What is plant height of "
+"Technician assessment - Reproductive",1762,"Plant population","question","What is the number of plants in "
+"Farmer assessment - Harvest",1740,"Irrigation","question","Did you use an irrigation system on your tricot trial?"
+"Farmer assessment - Harvest",1741,"Fertilizer","question","Did you use fertilizers on your tricot trial?"
+"Farmer assessment - Harvest",1742,"Fertilizer frequency","question","If yes, how many times you applied the fertilizer? Zero if none."
+"Farmer assessment - Harvest",1743,"Pesticide","question","Did you use pesticides on your tricot trial?"
+"Farmer assessment - Harvest",1744,"Pesticide frequency","question","If yes, how many times you applied the pesticide? Zero if none."
+"Farmer assessment - Harvest",1542,"Harvesting date","question","On which day did you harvest the plot"
+"Farmer assessment - Harvest",1568,"Threshabilty","ranked trait","Which option is easier to thresh? ; Which option is more difficult to thresh?"
+"Farmer assessment - Harvest",1570,"Stover yield","ranked trait","Which option has the higher stover yield?; Which option has the lower stover yield?"
+"Farmer assessment - Harvest",1558,"Yield","ranked trait","Which option has the higher yield?; Which option has the lower yield?"
+"Farmer assessment - Harvest",1559,"Grain size","ranked trait","Which option has the best grain/seed size for the target market?; Which option has the worst grain/seed size for the target market?"
+"Farmer assessment - Harvest",1572,"Grain hardness","ranked trait","Which option has the best hardness for the target use?; Which option has the worst hardness for the target use?"
+"Farmer assessment - Harvest",1560,"Grain colour","ranked trait","Which option has the best grain/seed colour for the target market?; Which option has the worst grain/seed colour for the target market?"
+"Farmer assessment - Harvest",1562,"Taste","ranked trait","Which option has the best taste?; Which option has the worst taste?"
+"Farmer assessment - Harvest",1569,"Malting quality","ranked trait","Which option has better malting quality?; Which option has the worse malting quality?"
+"Farmer assessment - Harvest",1561,"Marketability","ranked trait","Which option is easier to sell?; Which option is more difficult to sell?"
+"Farmer assessment - Harvest",204,"Overall preference","ranked trait","Overall, which option was the best?; Overall, which option was the worst?"
+"Farmer assessment - Harvest",1596,"Best why","question","Why do you indicate this option as the best?"
+"Farmer assessment - Harvest",1704,"Worst why","question","Why you indicated this option as the worst?"
+"Farmer assessment - Harvest",205,"Overall vs Local","ranked trait","Overall, is A, B, C better or worse than the one that you currently grow?"
+"Farmer assessment - Harvest",1778,"Grow again","question","If seeds were available for all three options, which option(s) would you like to grow in the next season?"
+"Technician assessment - Harvest",1762,"Plant population","question","What is the number of plants in "
+"Technician assessment - Harvest",1589,"Yield (quantitative)","question","The yield of "
+"Technician assessment - Harvest",1841,"Yield unit","question","Which unit did you use to measure the yield?"
+"Socio-economic baseline",1548,"Age","question","Please indicate your age"
+"Socio-economic baseline",2635,"Gender","question","Please select your gender"
+"Socio-economic baseline",1550,"Civil status","question","Please indicate your civil status"
+"Socio-economic baseline",1624,"Occupation","question","What is the main occupation of the respondent?"
+"Socio-economic baseline",1549,"Education","question","Please select your highest degree obtained"
+"Socio-economic baseline",1620,"Education years","question","For how many years did you attend school?"
+"Socio-economic baseline",1621,"Reading","question","Is the respondent able to read in English?"
+"Socio-economic baseline",1649,"Reading Local Language","question","Is the respondent able to read in the local language?"
+"Socio-economic baseline",1622,"Type of household","question","What is the type of household?"
+"Socio-economic baseline",1623,"Household size","question","Number of persons living together and sharing meals for more than 6 months a year"
+"Socio-economic baseline",1747,"Main crop","question","What is the most important crop that you produce?"
+"Socio-economic baseline",1746,"Other crops","question","What are the crops that you produce?"
+"Socio-economic baseline",1581,"Experience with the crop","question","Please indicate how many years you have growing the crop?"
+"Socio-economic baseline",1779,"Experience with tricot","question","Have you contributed to a tricot trial before? If yes, how many times? Zero if first time."
+"Socio-economic baseline",1637,"Who controls seed exchange","question","Who in your household is mainly responsible for {your tricot crop} seed saving or seed exchange?"
+"Socio-economic baseline",1756,"Varieties source","question","What is the source of {your tricot crop} seed?"
+"Socio-economic baseline",1754,"Number of varieties","question","How many different varieties of {your tricot crop} does your household produce?"
+"Socio-economic baseline",1755,"Variety name","question","What is the name of the variety(ies) that you commonly plant in your field?"
+"Socio-economic baseline",1757,"Variety brand","question","Does the seed that you buy have a brand and a label? If yes, please indicate the name."
+"Socio-economic baseline",1752,"Ways of selling","question","How do you usually sell {your tricot crop}?"
+"Socio-economic baseline",1636,"Who controls selling","question","Who in your household is mainly responsible for {your tricot crop} selling?"
+"Socio-economic baseline",1753,"Distance to market","question","How far is the nearest market or place you sell your {your tricot crop} from your farm?"
+"Socio-economic baseline",1750,"Sell share","question","What share of your {your tricot crop} harvest do you usually sell?"
+"Socio-economic baseline",1751,"Income crop sell","question","What share of your total household income comes from selling {your tricot crop}? "
+"Socio-economic baseline",1635,"Who controls production","question","Who in your household is mainly responsible for {your tricot crop} production?"
+"Socio-economic baseline",1664,"Production last 12 months","question","Did you produced {your tricot crop} during the past 12 months?"
+"Socio-economic baseline",1748,"Frequency of production","question","How many times per year you usually produce your {tricot crop}?"
+"Socio-economic baseline",1665,"Reason no production","question","If no production during the past 12 months, why? "
+"Socio-economic baseline",1749,"Production practices","question","Which of the following practices do you usually apply in {your tricot crop} production?"
+"Socio-economic baseline",1761,"Member of an organization","question","To what types of organization do you belong? "
+"Socio-economic baseline",1758,"Public extension service","question","Are you in contact with government/public extension services in relation with {your tricot crop} production?"
+"Socio-economic baseline",1759,"Private extension service","question","Are you in contact with private extension services in relation with {your tricot crop} production?"
+"Data manager inputs",5098,"Agroecological zone","question","Please indicate the agroecological zone where the plot was established"

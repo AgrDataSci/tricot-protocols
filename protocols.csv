@@ -1,20 +1,20 @@
 protocol_id,title,crop,crop_group,use_case,region,status,climmob_server,climmob_project_code,climmob_project_name,climmob_project_id,climmob_created,concept_doi,languages,notes
-sweetpotato-breeding,Sweet potato on-farm variety testing for breeding,sweetpotato,rtb,breeding,,published,1000farms,sweetpotat,Sweetpotato OFVT Breeding,a66cabc88baa,2026-01-23,10.5281/zenodo.20525269,en;pt;fr;es;swh,Zenodo v1 holds en es fr pt only; swh pending
-sorghum-variety-testing,Sorghum on-farm variety testing,sorghum,small-grains,variety-testing,,rendered,1000farms,sorghum,Sorghum OFT SOP,04e61b990d60,2022-03-18,,en;pt;fr;es;swh,Rendered 2026-07-01; DOI pending
-amaranth-variety-testing,Leafy amaranth on-farm variety testing,amaranth,leafy-vegetables,variety-testing,,placeholder,1000farms,amarantemp,Amaranth OFT SOP,52b5796bcd87,2026-05-21,,,"Leafy amaranth, not grain amaranth"
-bean-variety-testing,Common bean on-farm variety testing,bean,legumes,variety-testing,,placeholder,1000farms,beantempl,Common bean SOP,46691f3f5c41,2022-02-05,,,
-cassava-variety-testing,Cassava on-farm variety testing,cassava,rtb,variety-testing,,placeholder,1000farms,cassavtemp,Cassava OFT SOP,9b73106290e7,2023-04-25,,,
-cassava-variety-testing-west-africa,Cassava on-farm variety testing for West Africa,cassava,rtb,variety-testing,west-africa,placeholder,1000farms,casstempWA,Cassava West Africa SOP,ad976fd8cf24,2023-11-06,,,
-cowpea-variety-testing,Cowpea on-farm variety testing,cowpea,legumes,variety-testing,,placeholder,1000farms,cowpea,Cowpea OFT SOP,55771dd30996,2022-03-18,,,
-forages-variety-testing-nordic,Forages on-farm variety testing for Nordic conditions,forages,forages,variety-testing,nordic,placeholder,1000farms,foragenort,Forages OFT SOP,bc409d22e396,2026-03-06,,,
-forages-variety-testing-tropics,Forages on-farm variety testing for the tropics,forages,forages,variety-testing,tropics,placeholder,1000farms,foragetemp,Forages Tropics OFT SOP,637d58764f64,2024-05-04,,,
-groundnut-variety-testing,Groundnut on-farm variety testing,groundnut,legumes,variety-testing,,placeholder,1000farms,groundnut,Groundnut OFT SOP,2e3d2143ca57,2022-03-18,,,
-maize-variety-testing,Maize on-farm variety testing,maize,cereals,variety-testing,,placeholder,1000farms,maizetempl,Maize OFT SOP,74981965f02a,2022-02-02,,,
-millet-variety-testing,Millet and small grains on-farm variety testing,millet,small-grains,variety-testing,,placeholder,1000farms,millet,Millet OFT SOP,6e2b2e996b89,2022-03-18,,,Covers finger and pearl millet; also suits other small grains such as fonio and teff
-pigeonpea-variety-testing,Pigeonpea on-farm variety testing,pigeonpea,legumes,variety-testing,,placeholder,1000farms,pigeonpea,Pigeonpea OFT,a78584c167d3,2023-11-21,,,
-potato-variety-testing,Potato on-farm variety testing,potato,rtb,variety-testing,,placeholder,1000farms,potato,Potato OFT SOP,85ef57a52098,2024-05-07,,,
-bean-seed-systems,Common bean on-farm testing for seed systems,bean,legumes,seed-systems,,placeholder,1000farms,beanshort,Common bean OFT Seed Systems,d19a62377aff,2025-09-17,,,Short survey version
-maize-seed-systems,Maize on-farm testing for seed systems,maize,cereals,seed-systems,,placeholder,1000farms,maizeshort,Maize OFT Seed Systems,dcc3e2ed0bf3,2025-09-17,,,Short survey version
-potato-seed-systems,Potato on-farm testing for seed systems,potato,rtb,seed-systems,,placeholder,1000farms,potatshort,Potato OFT Seed Systems,410e0fbd70ae,2025-09-17,,,Short survey version
-rice-seed-systems,Rice on-farm testing for seed systems,rice,cereals,seed-systems,,placeholder,1000farms,riceshort,Rice OFT Seed Systems,69a6adae7d43,2025-09-18,,,Short survey version
-core,Core tricot protocol for on-farm trials without a defined crop,,,core,,placeholder,1000farms,CoreTemp,CoreSOP,f5844149f175,2026-01-10,,,For trials not tied to one crop; crop sheet needs a generic entry
+sweetpotato-breeding,Sweet potato on-farm variety testing for breeding,sweetpotato,rtb,breeding,tropics,published,1000farms,sweetpotat,Sweetpotato OFVT Breeding,a66cabc88baa,23/01/2026,10.5281/zenodo.20525269,en;pt;fr;es;swh,Zenodo v1 holds en es fr pt only; swh pending
+sorghum-variety-testing,Sorghum on-farm variety testing,sorghum,small-grains,variety-testing,tropics,rendered,1000farms,sorghum,Sorghum OFT SOP,04e61b990d60,18/03/2022,,en;pt;fr;es;swh,Rendered 2026-07-01; DOI pending
+amaranth-variety-testing,Leafy amaranth on-farm variety testing,amaranth,leafy-vegetables,variety-testing,tropics,rendered,1000farms,amarantemp,Amaranth OFT SOP,52b5796bcd87,21/05/2026,,en;pt;fr;es;swh,"Leafy amaranth, not grain amaranth"
+bean-variety-testing,Common bean on-farm variety testing,bean,legumes,variety-testing,tropics,rendered,1000farms,beantempl,Common bean SOP,46691f3f5c41,05/02/2022,,en;pt;fr;es;swh,
+cassava-variety-testing,Cassava on-farm variety testing,cassava,rtb,variety-testing,tropics,rendered,1000farms,cassavtemp,Cassava OFT SOP,9b73106290e7,25/04/2023,,en;pt;fr;es;swh,
+cassava-variety-testing-west-africa,Cassava on-farm variety testing for West Africa,cassava,rtb,variety-testing,west-africa,rendered,1000farms,casstempWA,Cassava West Africa SOP,ad976fd8cf24,06/11/2023,,en;fr,
+cowpea-variety-testing,Cowpea on-farm variety testing,cowpea,legumes,variety-testing,tropics,rendered,1000farms,cowpea,Cowpea OFT SOP,55771dd30996,18/03/2022,,en;pt;fr;es;swh,
+forages-variety-testing-nordic,Forages on-farm variety testing for Nordic conditions,forages,forages,variety-testing,nordic,rendered,1000farms,foragenort,Forages OFT SOP,bc409d22e396,06/03/2026,,en;fr;es;nor,
+forages-variety-testing-tropics,Forages on-farm variety testing for the tropics,forages,forages,variety-testing,tropics,rendered,1000farms,foragetemp,Forages Tropics OFT SOP,637d58764f64,04/05/2024,,en;pt;fr;es;swh,
+groundnut-variety-testing,Groundnut on-farm variety testing,groundnut,legumes,variety-testing,tropics,rendered,1000farms,groundnut,Groundnut OFT SOP,2e3d2143ca57,18/03/2022,,en;pt;fr;es;swh,
+maize-variety-testing,Maize on-farm variety testing,maize,cereals,variety-testing,tropics,rendered,1000farms,maizetempl,Maize OFT SOP,74981965f02a,02/02/2022,,en;pt;fr;es;swh,
+millet-variety-testing,Millet and small grains on-farm variety testing,millet,small-grains,variety-testing,tropics,rendered,1000farms,millet,Millet OFT SOP,6e2b2e996b89,18/03/2022,,en;pt;fr;es;swh,Covers finger and pearl millet; also suits other small grains such as fonio and teff
+pigeonpea-variety-testing,Pigeonpea on-farm variety testing,pigeonpea,legumes,variety-testing,tropics,rendered,1000farms,pigeonpea,Pigeonpea OFT,a78584c167d3,21/11/2023,,en;pt;fr;es;swh,
+potato-variety-testing,Potato on-farm variety testing,potato,rtb,variety-testing,tropics,rendered,1000farms,potato,Potato OFT SOP,85ef57a52098,07/05/2024,,en;pt;fr;es;swh,
+bean-seed-systems,Common bean on-farm testing for seed systems,bean,legumes,seed-systems,tropics,rendered,1000farms,beanshort,Common bean OFT Seed Systems,d19a62377aff,17/09/2025,,en;pt;fr;es;swh,Short survey version
+maize-seed-systems,Maize on-farm testing for seed systems,maize,cereals,seed-systems,tropics,rendered,1000farms,maizeshort,Maize OFT Seed Systems,dcc3e2ed0bf3,17/09/2025,,en;pt;fr;es;swh,Short survey version
+potato-seed-systems,Potato on-farm testing for seed systems,potato,rtb,seed-systems,tropics,rendered,1000farms,potatshort,Potato OFT Seed Systems,410e0fbd70ae,17/09/2025,,en;pt;fr;es;swh,Short survey version
+rice-seed-systems,Rice on-farm testing for seed systems,rice,cereals,seed-systems,tropics,rendered,1000farms,riceshort,Rice OFT Seed Systems,69a6adae7d43,18/09/2025,,en;pt;fr;es;swh,Short survey version
+core,Core tricot protocol for on-farm trials without a defined crop,all,all,core,global,rendered,1000farms,CoreTemp,CoreSOP,f5844149f175,10/01/2026,,en;pt;fr;es;swh,For trials not tied to one crop; crop sheet needs a generic entry
