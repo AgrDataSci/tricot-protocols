@@ -27,3 +27,6 @@ token/api-key.txt
 *.png
 *.zip
 
+
+# SOP figures used by script/render-sop.rmd
+!data/img/*.png

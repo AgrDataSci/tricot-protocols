@@ -111,6 +111,22 @@ datacite = list(
   })
 )
 
+# Resource type from the metadata sheet when present (Collection for this record)
+if (!is.null(get_meta("resource_type_general"))) {
+  datacite$resourceType$resourceTypeGeneral = get_meta("resource_type_general")
+}
+
+# The collection lists every published protocol with HasPart, read from the registry
+registry = read.csv("protocols.csv", na.strings = "")
+parts = na.omit(registry$concept_doi)
+if (length(parts) > 0) {
+  datacite$relatedIdentifiers = lapply(parts, function(d) {
+    list(relatedIdentifier = d,
+         relatedIdentifierType = "DOI",
+         relationType = "HasPart")
+  })
+}
+
 # Optional: Add dates
 if (!is.null(dates)) {
   datacite$dates = lapply(seq_len(nrow(dates)), function(i) {
