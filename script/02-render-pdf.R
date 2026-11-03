@@ -58,9 +58,11 @@ for (protocol_id in ids) {
   for (f in docx) {
 
     # a separate profile directory lets the conversion run while LibreOffice is open
-    profile = paste0("-env:UserInstallation=file:///",
-                     gsub("\\\\", "/", normalizePath(tempdir(), mustWork = FALSE)),
-                     "/lo-profile")
+    # Unix paths start with "/", Windows paths with a drive letter
+    tmp = gsub("\\\\", "/", normalizePath(tempdir(), mustWork = FALSE))
+    profile = paste0("-env:UserInstallation=",
+                     ifelse(startsWith(tmp, "/"), "file://", "file:///"),
+                     tmp, "/lo-profile")
 
     status = system2(soffice,
                      args = c(profile, "--headless", "--convert-to", "pdf",
