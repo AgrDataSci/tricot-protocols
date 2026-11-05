@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/badge/license-CC%20BY%204.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
 <!-- badges: end --> 
 
-<a href="https://github.com/AgrDataSci/ai-ready-documentation"><img src="docs/aipim-logo.svg" alt="Part of AIpim" height="64" align="right"></a>
+<a href="https://github.com/AgrDataSci/ai-ready-documentation"><img src="docs/maniva-logo.svg" alt="Part of Maniva" height="64" align="right"></a>
 
 ## Standard operating procedures for citizen science experiments using the tricot approach
 > Almendra Cremaschi, Marie-Angélique Laporte, Rhys	Manners, Hyacinthe	Nyirahabimana, Kauê de Sousa
@@ -14,7 +14,7 @@
 
 This repository holds the **standard operating procedures (SOPs)** for running **tricot** (Triadic Comparison of Technologies) on-farm trials. Each SOP is generated from a project template on [ClimMob](https://climmob.net), so the document a team reads and the survey farmers answer always match. The SOPs are multilingual and FAIR (Findable, Accessible, Interoperable, Reusable).
 
-tricot-protocols is the protocols layer of the [AIpim suite](https://github.com/AgrDataSci/ai-ready-documentation). Start there for the full picture. This repository also works on its own.
+tricot-protocols is the protocols layer of the [Maniva suite](https://github.com/AgrDataSci/ai-ready-documentation). Start there for the full picture. This repository also works on its own.
 
 ## What is tricot?
 

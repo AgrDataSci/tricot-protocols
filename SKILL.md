@@ -9,7 +9,7 @@ description: Use when asked how to set up, run or survey a tricot or ClimMob on-
 
 Standard operating procedures (SOPs) for tricot on-farm trials, developed by Bioversity International with national and CGIAR partners. Each SOP is generated from a ClimMob project template, so the questions in the SOP are the questions farmers answer. Use this skill to tell the user which protocol fits their trial and which questions it asks, and to point them to the template and the citable SOP.
 
-The evidence behind the protocols lives in [tricot-knowledge-base](https://github.com/AgrDataSci/tricot-knowledge-base). The data they produced live in [tricot-data](https://github.com/AgrDataSci/tricot-data). The AIpim suite entry point is [ai-ready-documentation](https://github.com/AgrDataSci/ai-ready-documentation).
+The evidence behind the protocols lives in [tricot-knowledge-base](https://github.com/AgrDataSci/tricot-knowledge-base). The data they produced live in [tricot-data](https://github.com/AgrDataSci/tricot-data). The Maniva suite entry point is [ai-ready-documentation](https://github.com/AgrDataSci/ai-ready-documentation).
 
 ## Use the live files
 
