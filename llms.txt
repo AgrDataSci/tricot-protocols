@@ -15,6 +15,6 @@ Read SKILL.md before answering. It routes a crop to its protocol and explains th
 
 ## Related
 
-- [ai-ready-documentation](https://github.com/AgrDataSci/ai-ready-documentation): the suite entry point
+- [ai-ready-documentation](https://github.com/AgrDataSci/ai-ready-documentation): the AIpim suite entry point
 - [tricot-knowledge-base](https://github.com/AgrDataSci/tricot-knowledge-base): the evidence behind the protocols
 - [tricot-data](https://github.com/AgrDataSci/tricot-data): the data the protocols produced
