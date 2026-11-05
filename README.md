@@ -10,15 +10,15 @@
 ## Standard operating procedures for citizen science experiments using the tricot approach
 > Almendra Cremaschi, Marie-Angélique Laporte, Rhys	Manners, Hyacinthe	Nyirahabimana, Kauê de Sousa
 
-# Tricot Protocols
+# tricot protocols
 
-This repository holds the **standard operating procedures (SOPs)** for running **tricot** (Triadic Comparison of Technologies) on-farm trials. Each SOP is generated from a project template on [ClimMob](https://climmob.net), so the document a team reads and the survey farmers answer always match. The SOPs are multilingual and FAIR (Findable, Accessible, Interoperable, Reusable).
+This repository holds the **standard operating procedures (SOPs)** for running **tricot** (triadic comparison of technology options) on-farm trials. Each SOP is generated from a project template on [ClimMob](https://climmob.net), so the document a team reads and the survey farmers answer always match. The SOPs are multilingual and FAIR (Findable, Accessible, Interoperable, Reusable).
 
 tricot-protocols is the protocols layer of the [maniva suite](https://github.com/AgrDataSci/maniva). Start there for the full picture. This repository also works on its own.
 
 ## What is tricot?
 
-Tricot is a participatory research approach where farmers test and compare three crop varieties (or technologies) on their own farms. It supports decentralized experimentation and citizen science while generating valuable data for breeding programs and food system actors. More at [https://climmob.net](https://climmob.net)
+tricot is a participatory research approach where farmers test and compare three crop varieties (or technologies) on their own farms. It supports decentralized experimentation and citizen science while generating valuable data for breeding programs and food system actors. More at [https://climmob.net](https://climmob.net)
 
 ## Who uses it
 

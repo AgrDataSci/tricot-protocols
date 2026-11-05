@@ -10,7 +10,7 @@
 | ClimMob template | `sweetpotat` on server `1000farms` |
 | Languages | en, pt, fr, es, swh |
 | DOI (all versions) | [10.5281/zenodo.20525269](https://doi.org/10.5281/zenodo.20525269) |
-| Part of | [Tricot protocols collection](https://doi.org/10.5281/zenodo.18428279) |
+| Part of | [tricot protocols collection](https://doi.org/10.5281/zenodo.18428279) |
 
 ## Purpose
 
