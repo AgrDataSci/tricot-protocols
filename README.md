@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/badge/license-CC%20BY%204.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
 <!-- badges: end --> 
 
-<a href="https://github.com/AgrDataSci/ai-ready-documentation"><img src="docs/maniva-logo.svg" alt="Part of maniva" height="64" align="right"></a>
+<a href="https://github.com/AgrDataSci/maniva"><img src="docs/maniva-logo.svg" alt="Part of maniva" height="64" align="right"></a>
 
 ## Standard operating procedures for citizen science experiments using the tricot approach
 > Almendra Cremaschi, Marie-Angélique Laporte, Rhys	Manners, Hyacinthe	Nyirahabimana, Kauê de Sousa
@@ -14,7 +14,7 @@
 
 This repository holds the **standard operating procedures (SOPs)** for running **tricot** (Triadic Comparison of Technologies) on-farm trials. Each SOP is generated from a project template on [ClimMob](https://climmob.net), so the document a team reads and the survey farmers answer always match. The SOPs are multilingual and FAIR (Findable, Accessible, Interoperable, Reusable).
 
-tricot-protocols is the protocols layer of the [maniva suite](https://github.com/AgrDataSci/ai-ready-documentation). Start there for the full picture. This repository also works on its own.
+tricot-protocols is the protocols layer of the [maniva suite](https://github.com/AgrDataSci/maniva). Start there for the full picture. This repository also works on its own.
 
 ## What is tricot?
 
@@ -26,7 +26,7 @@ NARS breeding teams and CGIAR programmes running late-stage on-farm testing, pro
 
 ## Use it with AI
 
-Paste `https://github.com/AgrDataSci/tricot-protocols` into an AI assistant with web access and ask, for example, "which questions does tricot use for cowpea?". The assistant reads [`AGENTS.md`](AGENTS.md) and [`SKILL.md`](SKILL.md). It finds the crop's own protocol, or falls back to its crop group (cereals, small grains, legumes, roots tubers and bananas, leafy vegetables, forages), or to the core protocol, and reads the question list of that protocol. In Claude, upload `SKILL.md` as a skill. To reach every layer of the suite from one link, use [ai-ready-documentation](https://github.com/AgrDataSci/ai-ready-documentation).
+Paste `https://github.com/AgrDataSci/tricot-protocols` into an AI assistant with web access and ask, for example, "which questions does tricot use for cowpea?". The assistant reads [`AGENTS.md`](AGENTS.md) and [`SKILL.md`](SKILL.md). It finds the crop's own protocol, or falls back to its crop group (cereals, small grains, legumes, roots tubers and bananas, leafy vegetables, forages), or to the core protocol, and reads the question list of that protocol. In Claude, upload `SKILL.md` as a skill. To reach every layer of the suite from one link, use [maniva](https://github.com/AgrDataSci/maniva).
 
 ## How the repository is organised
 
