@@ -1,6 +1,6 @@
 # Instructions for AI agents
 
-This repository holds the standard operating procedures (SOPs) for tricot on-farm trials, each generated from a ClimMob project template. It is the protocols layer of the [Maniva suite](https://github.com/AgrDataSci/ai-ready-documentation) and also works on its own. If a user shares this repository with you, use it as follows.
+This repository holds the standard operating procedures (SOPs) for tricot on-farm trials, each generated from a ClimMob project template. It is the protocols layer of the [maniva suite](https://github.com/AgrDataSci/ai-ready-documentation) and also works on its own. If a user shares this repository with you, use it as follows.
 
 1. Read `SKILL.md` first. It says how to find the protocol for a crop and how to answer which questions it uses.
 2. Resolve the crop in order. The crop's own protocol, then its crop group, then the `core` protocol. Tell the user which level answered.
