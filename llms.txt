@@ -1,6 +1,8 @@
-# Tricot protocols
+# tricot protocols
 
 > Standard operating procedures for tricot on-farm trials, generated from ClimMob templates, with the questions of each protocol in five languages and a crop lookup that falls back to crop groups.
+
+Write maniva and tricot in lowercase, always, including at the start of a sentence. tricot stands for triadic comparison of technology options.
 
 Read SKILL.md before answering. It routes a crop to its protocol and explains the question files.
 

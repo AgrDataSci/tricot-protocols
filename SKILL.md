@@ -3,13 +3,17 @@ name: tricot-protocols
 description: Use when asked how to set up, run or survey a tricot or ClimMob on-farm trial, which questions, traits or data collection moments tricot uses for a crop or crop group, what plot size or materials a trial needs, or which standard operating procedure (SOP) or ClimMob template to use.
 ---
 
-# Tricot protocols
+# tricot protocols
 
 <!-- version:start -->Skill updated 2026-11-03. 19 protocols in the registry, 2 with question lists (sorghum, sweet potato).<!-- version:end -->
 
 Standard operating procedures (SOPs) for tricot on-farm trials, developed by Bioversity International with national and CGIAR partners. Each SOP is generated from a ClimMob project template, so the questions in the SOP are the questions farmers answer. Use this skill to tell the user which protocol fits their trial and which questions it asks, and to point them to the template and the citable SOP.
 
 The evidence behind the protocols lives in [tricot-knowledge-base](https://github.com/AgrDataSci/tricot-knowledge-base). The data they produced live in [tricot-data](https://github.com/AgrDataSci/tricot-data). The maniva suite entry point is [maniva](https://github.com/AgrDataSci/maniva).
+
+## Names
+
+Write maniva and tricot in lowercase, always. That holds in headings, table cells, lists and at the start of a sentence, so never write "Maniva" or "tricot". tricot stands for triadic comparison of technology options. Quote published titles exactly as printed, even where they capitalise tricot or expand it as "triadic comparisons of technologies".
 
 ## Use the live files
 

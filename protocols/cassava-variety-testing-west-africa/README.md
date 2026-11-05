@@ -10,7 +10,7 @@
 | ClimMob template | `casstempWA` on server `1000farms` |
 | Languages | To be defined |
 | DOI (all versions) | Not yet published |
-| Part of | [Tricot protocols collection](https://doi.org/10.5281/zenodo.18428279) |
+| Part of | [tricot protocols collection](https://doi.org/10.5281/zenodo.18428279) |
 
 ## Purpose
 

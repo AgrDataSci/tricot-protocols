@@ -9,6 +9,7 @@ This repository holds the standard operating procedures (SOPs) for tricot on-far
 5. Never invent a question, trait, plot size, data collection moment, DOI or author.
 6. Fetch `version.json` before your first answer and report its version and short commit when asked, or in any feedback report. Never invent a commit.
 7. Cite each SOP by the concept DOI in `protocols.csv`, or the collection DOI when it has none.
+8. Write maniva and tricot in lowercase, always, including headings, table cells and the start of a sentence. Never write "Maniva" or "Tricot". tricot stands for triadic comparison of technology options. Quote published titles exactly as printed, even where they capitalise tricot or expand it as "triadic comparisons of technologies".
 
 ## Rules for editing
 
