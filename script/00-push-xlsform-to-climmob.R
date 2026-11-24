@@ -145,17 +145,19 @@ for (i in which(plan$status == "new")) {
   code = unique_code(q$code, taken)
   taken = c(taken, code)
 
-  res = cm$post("createQuestion", list(
-    question_code = code,
-    question_name = substr(humanise(q$code), 1, 120),
-    question_desc = q$text,
-    question_dtype = q$dtype,
-    qstgroups_id = category_id,
-    question_requiredvalue = as.integer(q$required),
-    question_tied = 0,
-    question_notobserved = as.integer(q$notobserved),
-    question_quantitative = as.integer(q$quantitative)
-  ))
+  # the flags apply to some types only, and ClimMob rejects them elsewhere
+  body = list(question_code = code,
+              question_name = substr(humanise(q$code), 1, 120),
+              question_desc = q$text,
+              question_dtype = q$dtype,
+              qstgroups_id = category_id,
+              question_requiredvalue = as.integer(q$required))
+  if (q$dtype == 9) {
+    body$question_tied = 0
+    body$question_notobserved = as.integer(q$notobserved)
+  }
+  if (!q$dtype %in% c(9, 10) && q$quantitative) body$question_quantitative = 1
+  res = cm$post("createQuestion", body)
 
   if (cm$dry_run) {
     id = paste0("new:", code)
@@ -212,7 +214,7 @@ if (p$project_cod %in% projects$project_cod) {
 countries = cm_records(cm$get("readListOfCountries"), c("code", "name"))
 if (!p$project_cnty %in% countries$code) stop("Unknown country code ", p$project_cnty)
 
-cm$post("createProject", c(p, list(project_template = "")))
+cm$post("createProject", p)
 log_action("createProject", p$project_cod, "created")
 
 # the question ids already in a form, so automatic ClimMob questions are not added twice

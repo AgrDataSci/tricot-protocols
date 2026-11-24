@@ -39,30 +39,26 @@ cm_client = function(key, server = "testing", dry_run = TRUE) {
   base = cm_base_url(server)
   ua = user_agent("tricot-protocols (https://github.com/AgrDataSci/tricot-protocols)")
 
-  # ClimMob reads every parameter from one JSON document called Body,
-  # in the query for GET and as a multipart text field for POST
-  as_body = function(fields) {
-    fields = lapply(fields, function(x) if (length(x) == 0 || is.na(x)) "" else x)
-    as.character(toJSON(fields, auto_unbox = TRUE))
-  }
-
+  # As in the ClimMob Postman examples, reads send their parameters in the
+  # query and writes send one form field per parameter. Leave out fields
+  # that do not apply: ClimMob rejects unexpected keys
   get = function(endpoint, ...) {
-    params = list(...)
-    query = list(Apikey = key)
-    if (length(params) > 0) query$Body = as_body(params)
-    r = RETRY("GET", paste0(base, endpoint), query = query,
+    r = RETRY("GET", paste0(base, endpoint),
+              query = c(list(Apikey = key), list(...)),
               ua, timeout(60), times = 3, quiet = TRUE)
     cm_parse_response(r, endpoint)
   }
 
   post = function(endpoint, body) {
-    json = as_body(body)
+    body = Filter(function(x) length(x) > 0 && !is.na(x), body)
+    body = lapply(body, as.character)
     if (dry_run) {
-      message("[dry run] POST ", endpoint, " ", json)
+      message("[dry run] POST ", endpoint, " ",
+              paste(names(body), body, sep = "=", collapse = "; "))
       return(NULL)
     }
     r = POST(paste0(base, endpoint), query = list(Apikey = key),
-             body = list(Body = json), encode = "multipart", ua, timeout(60))
+             body = body, encode = "multipart", ua, timeout(60))
     cm_parse_response(r, endpoint)
   }
 
