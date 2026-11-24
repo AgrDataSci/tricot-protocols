@@ -33,6 +33,7 @@ deployment = list(
   owner = "bioversity",        # account that owns the API key
   dry_run = TRUE,
   category = "tricot protocols",  # library category for new questions
+  lang = "en",                 # language of the new questions
   output = "deployments/chickpea",
   project = list(
     project_cod = "chickpea",   # 10 characters at most
@@ -145,13 +146,15 @@ for (i in which(plan$status == "new")) {
   code = unique_code(q$code, taken)
   taken = c(taken, code)
 
-  # the flags apply to some types only, and ClimMob rejects them elsewhere
+  # question_lang is required although the 2021 API docs leave it out. The
+  # flags apply to some types only, and ClimMob rejects them elsewhere
   body = list(question_code = code,
               question_name = substr(humanise(q$code), 1, 120),
               question_desc = q$text,
               question_dtype = q$dtype,
               qstgroups_id = category_id,
-              question_requiredvalue = as.integer(q$required))
+              question_requiredvalue = as.integer(q$required),
+              question_lang = deployment$lang)
   if (q$dtype == 9) {
     body$question_tied = 0
     body$question_notobserved = as.integer(q$notobserved)
