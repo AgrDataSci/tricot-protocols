@@ -276,6 +276,10 @@ for (f in seq_along(deployment$forms)) {
 
     for (x in Filter(function(x) x$group == g, here)) {
       row = plan[plan$signature == x$sig, ]
+      if (row$status == "automatic in ClimMob") {
+        log_action("skip", row$code, "added by ClimMob")
+        next
+      }
       if (row$question_id %in% present) {
         log_action("skip", row$code, "already in the form")
         next

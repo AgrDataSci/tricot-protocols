@@ -156,8 +156,8 @@ parse_xlsform = function(file, skip = character(0), use_id = integer(0)) {
       next
     }
 
-    code = sub("^g\\d+_", "", name)
-    code = sub("^(qst_|char_|perf_)", "", code, ignore.case = TRUE)
+    raw = sub("^g\\d+_", "", name)
+    code = sub("^(qst_|char_|perf_)", "", raw, ignore.case = TRUE)
 
     opts = choices[!is.na(choices$list_name) & choices$list_name == list_name, ]
     opts = data.frame(value_code = opts$name, value_desc = opts[[lab_c]],
@@ -167,13 +167,15 @@ parse_xlsform = function(file, skip = character(0), use_id = integer(0)) {
     q = list(code = code, group = group, required = required,
              dtype = unname(xls_dtype[base]), text = label, posstm = NA,
              negstm = NA, perfstmt = NA, quantitative = FALSE,
-             notobserved = FALSE, options = NULL, use_id = NA_integer_)
+             notobserved = FALSE, options = NULL, use_id = NA_integer_,
+             code_raw = raw)
 
     # ranking pair, e.g. char_maturity_pos and char_maturity_neg
     if (base == "select_one" && is_option_list && grepl("_(pos|neg)$", code)) {
       key = sub("_(pos|neg)$", "", code)
       if (is.null(out[[key]])) {
         q$code = key
+        q$code_raw = sub("_(pos|neg)$", "", raw)
         q$dtype = 9
         q$text = "-"
         q$notobserved = any(norm_text(opts$value_desc) == "not observed")
@@ -190,6 +192,7 @@ parse_xlsform = function(file, skip = character(0), use_id = integer(0)) {
       key = sub("_\\d$", "", code)
       if (is.null(out[[key]])) {
         q$code = key
+        q$code_raw = sub("_\\d$", "", raw)
         q$dtype = 10
         q$text = "-"
         q$perfstmt = gsub("Option [ABC]", "this option", label)
@@ -203,6 +206,7 @@ parse_xlsform = function(file, skip = character(0), use_id = integer(0)) {
       key = sub("_[abc]$", "", code)
       if (is.null(out[[key]])) {
         q$code = key
+        q$code_raw = sub("_[abc]$", "", raw)
         q$quantitative = TRUE
         q$text = strip_option(label)
         out[[key]] = q
@@ -268,7 +272,14 @@ read_library = function(cm) {
                     ifelse(lib$question_dtype == "10", lib$question_perfstmt,
                            lib$question_desc))
   lib$text_norm = norm_text(lib$text)
-  lib
+  lib[!duplicated(lib$question_id), ]
+}
+
+# the library codes a form question can carry. ClimMob exports use the library
+# code as the XLSForm name, with char_ for rankings and perf_ for comparisons
+code_candidates = function(q) {
+  raw = q$code_raw
+  unique(tolower(c(raw, sub("^(char_|perf_)", "", raw), q$code, paste0("qst_", q$code))))
 }
 
 option_set = function(cm, question_id) {
@@ -285,17 +296,40 @@ match_questions = function(cm, questions, lib, owner) {
                      quantitative = q$quantitative, forms = q$forms,
                      status = "new", question_id = NA_character_,
                      user_name = NA_character_, suggested_id = NA_character_,
-                     suggested_text = NA_character_, stringsAsFactors = FALSE)
+                     suggested_text = NA_character_, library_text = NA_character_,
+                     stringsAsFactors = FALSE)
 
     if (!is.na(q$use_id)) {
       hit = lib[lib$question_id == as.character(q$use_id), ]
       if (nrow(hit) == 0) {
         res$status = "fixed id not in library"
       } else {
-        res$status = "matched by id"
+        # 7 package and 8 participant are added by ClimMob to every form
+        res$status = if (hit$question_dtype[1] %in% c("7", "8")) "automatic in ClimMob" else
+          "matched by id"
         res$question_id = hit$question_id[1]
         res$user_name = hit$user_name[1]
+        res$library_text = hit$text[1]
       }
+      return(res)
+    }
+
+    # same code and type as a library question: the form came from ClimMob
+    cand = lib[tolower(lib$question_code) %in% code_candidates(q) &
+                 lib$question_dtype == as.character(q$dtype), ]
+    if (nrow(cand) > 0) {
+      cand = cand[order(cand$user_name != owner, as.integer(cand$question_id)), ]
+      res$question_id = cand$question_id[1]
+      res$user_name = cand$user_name[1]
+      res$library_text = cand$text[1]
+      notes = "matched by code"
+      if (norm_text(txt) != cand$text_norm[1]) notes = c(notes, "text differs")
+      if (!is.null(q$options) &&
+          !identical(option_set(cm, cand$question_id[1]),
+                     sort(norm_text(q$options$value_desc)))) {
+        notes = c(notes, "options differ")
+      }
+      res$status = paste(notes, collapse = ", ")
       return(res)
     }
 
@@ -316,6 +350,7 @@ match_questions = function(cm, questions, lib, owner) {
       res$status = if (nrow(cand) > 1) "matched, several candidates" else "matched"
       res$question_id = cand$question_id[1]
       res$user_name = cand$user_name[1]
+      res$library_text = cand$text[1]
       return(res)
     }
 
