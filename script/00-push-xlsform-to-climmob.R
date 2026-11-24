@@ -119,6 +119,22 @@ if (any(plan$status == "fixed id not in library")) {
   if (cm$dry_run) warning(msg, call. = FALSE) else stop(msg)
 }
 
+# ClimMob rejects long question texts ("The question is very long"). The
+# longest text in the library is 116 characters, so 120 is taken as the limit.
+# Check before writing anything, so a run does not stop halfway
+max_chars = 120
+long_text = vapply(plan$signature, function(sig) {
+  q = questions[[sig]]
+  max(nchar(c(q$text, q$posstm, q$negstm, q$perfstmt)), na.rm = TRUE)
+}, numeric(1))
+too_long = plan$status == "new" & long_text > max_chars
+if (any(too_long)) {
+  msg = paste0("Shorten these question texts to ", max_chars,
+               " characters or less in the XLSForm: ",
+               paste0(plan$code[too_long], " (", long_text[too_long], ")", collapse = ", "))
+  if (cm$dry_run) warning(msg, call. = FALSE) else stop(msg)
+}
+
 log_env = new.env()
 log_env$rows = list()
 log_action = function(action, target, result) {
