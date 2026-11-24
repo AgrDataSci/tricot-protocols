@@ -29,31 +29,31 @@ source("script/helper/helper-04-climmob-api.R")
 # ---------------------------------------------------------------------------
 
 deployment = list(
-  server = "testing",          # testing, climmob3 or 1000farms
+  server = "1000farms",          # testing, climmob3 or 1000farms
   owner = "bioversity",        # account that owns the API key
   dry_run = TRUE,
   category = "tricot protocols",  # library category for new questions
-  output = "deployments/india-tumkur-chickpea-2025",
+  output = "deployments/chickpea",
   project = list(
-    project_cod = "tmkcp25",   # 10 characters at most
-    project_name = "Tumkur chickpea 2025",
-    project_abstract = "tricot variety evaluation of chickpea in Tumkur, Karnataka",
+    project_cod = "chickpea",   # 10 characters at most
+    project_name = "Chickpea Template",
+    project_abstract = "Template to deploy on-farm trials with chickpea",
     project_tags = "chickpea;tricot;India",
-    project_pi = "TODO",
-    project_piemail = "TODO",
-    project_numobs = "TODO",
-    project_cnty = "IN",
+    project_pi = "Kauê de Sousa",
+    project_piemail = "k.desousa@cgiar.org",
+    project_numobs = "100000",
+    project_cnty = "FR",
     project_registration_and_analysis = 0,
-    project_label_a = "Option A",
-    project_label_b = "Option B",
-    project_label_c = "Option C"
+    project_label_a = "A",
+    project_label_b = "B",
+    project_label_c = "C"
   ),
   forms = list(
     list(file = "registration_tumkur_chickpea_2025.xlsx", type = "registration"),
     list(file = "afterrep_tumkur_chickpea_v1.xlsx", type = "assessment",
-         ass_desc = "After reproduction", ass_days = "TODO", ass_final = 0),
+         ass_desc = "After reproduction", ass_days = "1", ass_final = 0),
     list(file = "postharv_tumkur_chickpea_v1.xlsx", type = "assessment",
-         ass_desc = "Post harvest", ass_days = "TODO", ass_final = 1)
+         ass_desc = "Post harvest", ass_days = "2", ass_final = 1)
   ),
   # XLSForm names to leave out
   skip = c("chickpea_tumkur_2025_reg", "chickpea_tumkur_2025_afterrep",
@@ -309,3 +309,5 @@ write.csv(log, file.path(deployment$output,
 
 message("Done. Review ", file.path(deployment$output, "plan.csv"), " and the log, ",
         "then curate the forms in ClimMob.")
+
+
