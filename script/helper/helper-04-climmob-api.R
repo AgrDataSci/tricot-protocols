@@ -292,6 +292,15 @@ option_set = function(cm, question_id) {
   sort(norm_text(v$value_desc))
 }
 
+# Form codes that mean an administrative level, matched to ClimMob's
+# standard qst_ADM1 to qst_ADM3 questions whatever their type in the form
+admin_levels = c(state = "qst_adm1", province = "qst_adm1", region = "qst_adm1",
+                 adm1 = "qst_adm1",
+                 district = "qst_adm2", county = "qst_adm2", municipality = "qst_adm2",
+                 adm2 = "qst_adm2",
+                 village = "qst_adm3", community = "qst_adm3", locality = "qst_adm3",
+                 adm3 = "qst_adm3")
+
 # one row per question, matched to the library or marked new
 match_questions = function(cm, questions, lib, owner) {
   rows = lapply(questions, function(q) {
@@ -316,6 +325,21 @@ match_questions = function(cm, questions, lib, owner) {
         res$library_text = hit$text[1]
       }
       return(res)
+    }
+
+    # administrative levels go to the standard ADM questions
+    adm = admin_levels[tolower(q$code)]
+    if (!is.na(adm)) {
+      hit = lib[tolower(lib$question_code) == adm, ]
+      if (nrow(hit) > 0) {
+        res$question_id = hit$question_id[1]
+        res$user_name = hit$user_name[1]
+        res$library_text = hit$text[1]
+        res$status = paste0("matched as ", toupper(sub("qst_", "", adm)),
+                            if (hit$question_dtype[1] != as.character(q$dtype))
+                              ", type differs" else "")
+        return(res)
+      }
     }
 
     # same code and type as a library question: the form came from ClimMob
