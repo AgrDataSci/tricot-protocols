@@ -106,6 +106,7 @@ for (f in seq_along(deployment$forms)) {
 lib = read_library(cm)
 plan = match_questions(cm, unname(questions), lib, deployment$owner)
 plan$signature = names(questions)
+plan = pii_flag(plan, lib)
 write.csv(plan, file.path(deployment$output, "plan.csv"), row.names = FALSE)
 
 message(sum(grepl("^matched", plan$status)), " questions matched, ",
@@ -314,5 +315,11 @@ write.csv(log, file.path(deployment$output,
 
 message("Done. Review ", file.path(deployment$output, "plan.csv"), " and the log, ",
         "then curate the forms in ClimMob.")
+
+to_mark = plan$code[plan$pii == "mark as confidential in ClimMob"]
+if (length(to_mark) > 0) {
+  message("Mark as confidential (PII) in the ClimMob library: ",
+          paste(to_mark, collapse = ", "))
+}
 
 

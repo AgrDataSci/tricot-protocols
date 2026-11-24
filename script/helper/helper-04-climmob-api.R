@@ -270,7 +270,7 @@ question_signature = function(q) {
 
 library_fields = c("question_id", "question_code", "question_name", "question_desc",
                    "question_dtype", "question_posstm", "question_negstm",
-                   "question_perfstmt", "user_name")
+                   "question_perfstmt", "user_name", "question_sensitive")
 
 read_library = function(cm) {
   lib = cm_records(cm$get("readQuestions"), library_fields)
@@ -399,6 +399,22 @@ match_questions = function(cm, questions, lib, owner) {
     res
   })
   do.call(rbind, rows)
+}
+
+# Personal data the platform should mark as confidential (PII). ClimMob's API
+# cannot set question_sensitive or question_anonymity, so the plan flags them
+# for curation in the platform
+pii_pattern = paste0("\\b(names?|father|husband|mother|wife|spouse|phone|mobile|",
+                     "telephone|e ?mail|address|gps|geopoint|coordinates?|",
+                     "national id|id number|aadhaar|signature)\\b")
+
+pii_flag = function(plan, lib) {
+  txt = norm_text(paste(plan$code, plan$text))
+  looks = grepl(pii_pattern, txt, perl = TRUE) | plan$dtype == 4
+  marked = lib$question_sensitive[match(plan$question_id, lib$question_id)] %in% "1"
+  plan$pii = ifelse(marked, "marked in library",
+                    ifelse(looks, "mark as confidential in ClimMob", ""))
+  plan
 }
 
 # a question_code not taken in the library
