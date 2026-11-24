@@ -67,6 +67,9 @@ cm_client = function(key, server = "testing", dry_run = TRUE) {
 
 # list of records (JSON array of objects) to a data.frame of character columns
 cm_records = function(x, fields) {
+  # a single JSON object comes back as a named list: treat it as one record
+  if (is.list(x) && !is.null(names(x)) && any(fields %in% names(x))) x = list(x)
+  if (is.list(x)) x = Filter(is.list, x)
   if (!is.list(x) || length(x) == 0) {
     return(as.data.frame(setNames(replicate(length(fields), character(0),
                                             simplify = FALSE), fields),
