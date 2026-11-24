@@ -34,6 +34,9 @@ deployment = list(
   dry_run = TRUE,
   category = "tricot protocols",  # library category for new questions
   lang = "en",                 # language of the new questions
+  # FALSE to use a project already created in the platform with project_cod.
+  # ClimMob's createProject now needs fields the 2021 API docs leave out
+  create_project = FALSE,
   output = "deployments/chickpea",
   project = list(
     project_cod = "chickpea",   # 10 characters at most
@@ -227,15 +230,20 @@ p = deployment$project
 owner = deployment$owner
 
 projects = cm_records(cm$get("readProjects"), c("project_cod", "owner"))
-if (p$project_cod %in% projects$project_cod) {
-  stop("Project ", p$project_cod, " already exists, choose another project_cod")
+exists = p$project_cod %in% projects$project_cod
+
+if (isTRUE(deployment$create_project)) {
+  if (exists) stop("Project ", p$project_cod, " already exists, choose another project_cod")
+  countries = cm_records(cm$get("readListOfCountries"), c("code", "name"))
+  if (!p$project_cnty %in% countries$code) stop("Unknown country code ", p$project_cnty)
+  cm$post("createProject", p)
+  log_action("createProject", p$project_cod, "created")
+} else {
+  if (!exists && !cm$dry_run) {
+    stop("Create project ", p$project_cod, " in ClimMob first, or set create_project = TRUE")
+  }
+  log_action("useProject", p$project_cod, if (exists) "found" else "not found yet")
 }
-
-countries = cm_records(cm$get("readListOfCountries"), c("code", "name"))
-if (!p$project_cnty %in% countries$code) stop("Unknown country code ", p$project_cnty)
-
-cm$post("createProject", p)
-log_action("createProject", p$project_cod, "created")
 
 # the question ids already in a form, so automatic ClimMob questions are not added twice
 form_ids = function(f) {
