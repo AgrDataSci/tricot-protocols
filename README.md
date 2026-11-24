@@ -97,10 +97,19 @@ Always cite the concept DOI, never a version DOI.
 
 ## Adding a protocol
 
-1. Create the project template on ClimMob.
+1. Create the project template on ClimMob, by hand or from XLSForms with `script/00-push-xlsform-to-climmob.R` (see below).
 2. Add a row to `protocols.csv` with the template code, and link the crop in `data/crops.csv`.
 3. Copy a placeholder folder from `protocols/` and rename it to the new protocol ID.
 4. Follow the steps under Publishing on Zenodo.
+
+## Building a ClimMob project from XLSForms
+
+`script/00-push-xlsform-to-climmob.R` builds a ClimMob project through the [ClimMob API](https://documenter.getpostman.com/view/13253300/TVYGcxau) from ODK XLSForms with English labels, one for registration and one per data collection moment. It collapses the ODK rows into ClimMob library questions, reuses library questions with the same text, type and options, creates the missing ones, then creates the project with its groups and questions. Translations, question order and final curation stay in the ClimMob platform.
+
+1. Put the forms in `deployments/<deployment>/forms/` and fill the deployment list at the top of the script. The `deployments/` folder is not versioned.
+2. Set the `CLIMMOB_API_KEY` environment variable, for example in `.Renviron`.
+3. Run with `dry_run = TRUE`. Review `plan.csv`, which lists each question as matched or new, with the closest library question for new ones. Force a match with `use_id`.
+4. Run with `dry_run = FALSE` on the testing server, check the project in ClimMob, then repeat on the production server.
 
 ## Contribute
 
