@@ -31,7 +31,7 @@ source("script/helper/helper-04-climmob-api.R")
 deployment = list(
   server = "1000farms",          # testing, climmob3 or 1000farms
   owner = "bioversity",        # account that owns the API key
-  dry_run = TRUE,
+  dry_run = FALSE,
   category = "tricot protocols",  # library category for new questions
   lang = "en",                 # language of the new questions
   # FALSE to use a project already created in the platform with project_cod.
