@@ -25,8 +25,10 @@
 # ClimMob API key
 token/api-key.txt
 
-# deployment forms, plans and logs from script/00-push-xlsform-to-climmob.R
-deployments/
+# run outputs of script/03-push-template-to-climmob.R (forms and templates are versioned)
+deployments/*/plan.csv
+deployments/*/log.csv
+deployments/*/log-dry-run.csv
 *.png
 *.zip
 

@@ -97,19 +97,38 @@ Always cite the concept DOI, never a version DOI.
 
 ## Adding a protocol
 
-1. Create the project template on ClimMob, by hand or from XLSForms with `script/00-push-xlsform-to-climmob.R` (see below).
+1. Create the project template on ClimMob, by hand or from a template CSV with `script/03-push-template-to-climmob.R` (see below).
 2. Add a row to `protocols.csv` with the template code, and link the crop in `data/crops.csv`.
 3. Copy a placeholder folder from `protocols/` and rename it to the new protocol ID.
-4. Follow the steps under Publishing on Zenodo.
+4. Export its `template.csv` with `script/00-export-templates.R`.
+5. Follow the steps under Publishing on Zenodo.
 
-## Building a ClimMob project from XLSForms
+## Template CSV
 
-`script/00-push-xlsform-to-climmob.R` builds a ClimMob project through the [ClimMob API](https://documenter.getpostman.com/view/13253300/TVYGcxau) from ODK XLSForms with English labels, one for registration and one per data collection moment. It collapses the ODK rows into ClimMob library questions, reuses library questions with the same text, type and options, creates the missing ones, then creates the project with its groups and questions. Translations, question order and final curation stay in the ClimMob platform.
+Each protocol has a `template.csv` that describes its ClimMob template in one file, one row per question in form order. The columns give the form (registration or a data collection moment, with its days after registration), the group, the ClimMob library question (id and code), its type, texts, ranking or comparison statements, flags and options. Options read `code=label | code=label`, with ` [other]` or ` [na]` after a label to mark it. The full column list is in `script/helper/helper-05-template-csv.R`.
 
-1. Put the forms in `deployments/<deployment>/forms/` and fill the deployment list at the top of the script. The `deployments/` folder is not versioned.
-2. Set the `CLIMMOB_API_KEY` environment variable, for example in `.Renviron`.
-3. Run with `dry_run = TRUE`. Review `plan.csv`, which lists each question as matched or new, with the closest library question for new ones. Force a match with `use_id`.
-4. Run with `dry_run = FALSE` on the testing server, check the project in ClimMob, then repeat on the production server.
+- `script/00-export-templates.R` writes `protocols/<protocol_id>/template.csv` for every protocol from its ClimMob template. It only reads from ClimMob. Never edit these files by hand.
+- `script/03-push-template-to-climmob.R` builds a ClimMob project from a template CSV. It reuses library questions by `question_id`, then by code and type, then by text, type and options, creates the missing questions, and adds the groups, data collection moments and questions to the project.
+- `script/04-convert-xlsform-to-template.R` turns ODK XLSForms into a template CSV, for deployments that start from ODK forms.
+
+### Building a ClimMob project
+
+1. Copy a protocol's `template.csv` to `deployments/<deployment>/template.csv`, or convert the deployment's XLSForms with `script/04-convert-xlsform-to-template.R`. Keep the source forms in `deployments/<deployment>/forms/`.
+2. Edit the CSV. Set `question_id` to reuse a library question as it is.
+3. Create the project in ClimMob with the code set in the push script. The API cannot create projects (see below).
+4. Set the `CLIMMOB_API_KEY` environment variable, for example in `.Renviron`.
+5. Run the push script with `dry_run = TRUE` and review `plan.csv`, which lists each question as matched or new and flags personal data questions.
+6. Run it with `dry_run = FALSE`, then curate the project in ClimMob. Question order, translations, confidential flags (PII) and wording are done in the platform.
+
+### What the ClimMob API does not do
+
+Tested on 1000farms in November 2026, against the [API documentation](https://documenter.getpostman.com/view/13253300/TVYGcxau).
+
+- `createQuestion` requires `question_lang`, which the documentation leaves out.
+- `createProject` rejects every documented field set, so projects are created in the platform.
+- `question_sensitive` and `question_anonymity` cannot be set through the API.
+- Question texts longer than about 120 characters are rejected.
+- Translations cannot be added through the API.
 
 ## Contribute
 

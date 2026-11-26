@@ -27,6 +27,7 @@ Protocols change as templates are revised. Read the files you need from `https:/
 | `data/crops.csv` | Crop names, aliases and scientific names, with their crop group and own protocol |
 | `data/crop-groups.csv` | Crop groups and the default protocol of each |
 | `protocols/<protocol_id>/questions-<lang>.csv` | The questions of the protocol, by data collection moment, in each language |
+| `protocols/<protocol_id>/template.csv` | The full ClimMob template in English, one row per question with its form, group, type, statements and options, for users who want to build their own project from it |
 | `protocols/<protocol_id>/README.md` | Protocol card with status, languages, DOI and purpose |
 | `protocols/<protocol_id>/protocol-metadata.xlsx` | Plot size, planting material, authors and funders |
 | `protocols/<protocol_id>/sop/` | The rendered SOP documents, `<protocol_id>-sop-<lang>.docx` |

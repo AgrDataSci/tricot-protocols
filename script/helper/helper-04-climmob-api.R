@@ -1,6 +1,7 @@
-# Helpers to build ClimMob forms from XLSForms through the ClimMob API
+# Helpers to talk to the ClimMob API and to build ClimMob forms
 #
-# Used by script/00-push-xlsform-to-climmob.R. Three parts
+# Used by script/00-export-templates.R, script/03-push-template-to-climmob.R
+# and script/04-convert-xlsform-to-template.R. Three parts
 #   1. a small API client (GET retries, POST never retries, key never printed)
 #   2. an XLSForm parser that collapses ODK rows into ClimMob library questions
 #   3. matching against the account's question library
@@ -331,7 +332,7 @@ match_questions = function(cm, questions, lib, owner) {
     }
 
     # administrative levels go to the standard ADM questions
-    adm = admin_levels[tolower(q$code)]
+    adm = admin_levels[sub("^qst_", "", tolower(q$code))]
     if (!is.na(adm)) {
       hit = lib[tolower(lib$question_code) == adm, ]
       if (nrow(hit) > 0) {
